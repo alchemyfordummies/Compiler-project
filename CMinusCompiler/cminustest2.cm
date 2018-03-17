@@ -1,0 +1,11 @@
+void main(void)
+{
+    int x; int y; !ff
+    x = input(); y = input();
+    x = 5/y;
+    abs45a23
+    12ad
+    /*abl;
+    * ajk if else return*/
+    output(gcd(x,y));
+}
