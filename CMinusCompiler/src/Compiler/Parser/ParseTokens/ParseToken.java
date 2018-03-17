@@ -5,4 +5,5 @@ import Tree.TreeNode;
 
 public interface ParseToken {
     public TreeNode parseToken();
+    public void match();
 }

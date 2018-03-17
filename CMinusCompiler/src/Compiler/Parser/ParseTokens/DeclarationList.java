@@ -18,4 +18,9 @@ public class DeclarationList implements ParseToken {
     public TreeNode parseToken() {
         return null;
     }
+
+    @Override
+    public void match() {
+
+    }
 }
