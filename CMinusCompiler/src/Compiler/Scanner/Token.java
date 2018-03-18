@@ -57,4 +57,8 @@ public class Token {
     public Object getTokenData(){
         return tokenData;
     }
+
+    public boolean match(TokenType tokenType){
+        return this.tokenType == tokenType;
+    }
 }

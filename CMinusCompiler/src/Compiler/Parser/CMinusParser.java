@@ -17,12 +17,11 @@ public class CMinusParser implements Parser {
     @Override
     public AbstractSyntaxTree parse() {
         TreeNode treeNode = new TreeNode(1);
-        for (Token token: tokens) {
-            DeclarationList declarationList = new DeclarationList(token);
-            treeNode = declarationList.parseToken();
-            if (token.getTokenType() != Token.TokenType.END_OF_FILE) {
-                // print an error
-            }
+        Token token = tokens.get(0);
+        DeclarationList declarationList = new DeclarationList();
+        treeNode = declarationList.parseToken(tokens, 0);
+        if (token.getTokenType() != Token.TokenType.END_OF_FILE) {
+            // print an error
         }
 
         return new AbstractSyntaxTree(treeNode);

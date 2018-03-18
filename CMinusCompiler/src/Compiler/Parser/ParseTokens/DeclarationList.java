@@ -3,24 +3,16 @@ package Compiler.Parser.ParseTokens;
 import Compiler.Scanner.Token;
 import Tree.TreeNode;
 
+import java.util.ArrayList;
+
 public class DeclarationList implements ParseToken {
-    private Token token;
-
-    public DeclarationList(Token token) {
-        this.token = token;
-    }
-
-    public void setToken(Token token) {
-        this.token = token;
-    }
-
     @Override
-    public TreeNode parseToken() {
+    public TreeNode parseToken(ArrayList<Token> tokens, int index) {
         return null;
     }
 
     @Override
-    public void match() {
+    public void match(Token token) {
 
     }
 }
