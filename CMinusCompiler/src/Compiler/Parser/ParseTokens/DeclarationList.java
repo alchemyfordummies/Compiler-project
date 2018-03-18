@@ -5,8 +5,7 @@ import Tree.TreeNode;
 
 import java.util.ArrayList;
 
-public class DeclarationList implements ParseToken {
-    @Override
+public class DeclarationList throws ParseException {
     public TreeNode parseToken(ArrayList<Token> tokens, int index) {
         return null;
     }
