@@ -12,7 +12,7 @@ public class Statement {
     public Statement parseStatement(TokenList tokens) throws ParseException {
         Token nextToken = tokens.getNextToken();
 
-        if (nextToken.match(ID_TOKEN)) {
+        if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {
             // ExpressionStatement expressionStatement = new ExpressionStatement();
             // expressionStatement.parseExpressionStatement(tokens);
             // return expressionStatement;
