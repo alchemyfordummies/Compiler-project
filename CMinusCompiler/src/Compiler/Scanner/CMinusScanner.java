@@ -37,6 +37,10 @@ public class CMinusScanner implements Scanner {
         contentIndex = 0;
     }
 
+    public ArrayList<Token> getTokensFound() {
+        return tokensFound;
+    }
+
     @Override
     public Token getNextToken() {
         State currentState = State.START;

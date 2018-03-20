@@ -27,7 +27,6 @@ public class Parameter {
         if (nextToken.match(VOID_TOKEN)) {
             return parameters;
         } else {
-            nextToken = tokens.getNextToken();
             while (nextToken.match(INT_TOKEN)) {
                 parameters.add(parseParameter(tokens));
                 nextToken = tokens.getNextToken();

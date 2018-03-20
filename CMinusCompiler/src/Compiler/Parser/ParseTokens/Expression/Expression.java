@@ -52,13 +52,10 @@ public class Expression {
                 throw new ParseException("Expected ]", 0);
             }
         }
-        else if(nextToken.match(MULTIPLY_TOKEN) || nextToken.match(DIVIDE_TOKEN) || nextToken.match(SEMICOLON_TOKEN)
-                || nextToken.match(CLOSE_BRACKET_TOKEN) || nextToken.match(CLOSE_PARENS_TOKEN) || nextToken.match(COMMA_TOKEN)){
+        else{
+            tokens.ungetToken();
             Expression varExpression = new VarExpression(idToken, null);
             return parseSimpleExpressionPrime(tokens, varExpression);
-        }
-        else{
-            throw new ParseException("Expected first or follow of expression'", 0);
         }
     }
 
@@ -78,22 +75,15 @@ public class Expression {
     }
 
     public static Expression parseSimpleExpressionPrime(TokenList tokens, Expression expression1) throws  ParseException{
+        Expression lhs = parseAddExprPrime(tokens, expression1);
         Token nextToken = tokens.getNextToken();
-        if(nextToken.match(SEMICOLON_TOKEN) || nextToken.match(CLOSE_BRACKET_TOKEN) || nextToken.match(CLOSE_PARENS_TOKEN)
-                || nextToken.match(MULTIPLY_TOKEN) || nextToken.match(DIVIDE_TOKEN) || nextToken.match(COMMA_TOKEN)){
-            Expression lhs = parseAddExprPrime(tokens, expression1);
-            nextToken = tokens.getNextToken();
-            if (nextToken.match(LESS_THAN_EQUALS_TOKEN) || nextToken.match(LESS_THAN_TOKEN) || nextToken.match(GREATER_THAN_EQUALS_TOKEN)
-                    || nextToken.match(GREATER_THAN_TOKEN) || nextToken.match(EQUALS_TOKEN) || nextToken.match(NOT_EQUALS_TOKEN)){
-                Expression rhs = parseAddExpr(tokens);
-                return new BinaryExpression(lhs, rhs, nextToken);
-            }
-            else{
-                return lhs;
-            }
+        if (nextToken.match(LESS_THAN_EQUALS_TOKEN) || nextToken.match(LESS_THAN_TOKEN) || nextToken.match(GREATER_THAN_EQUALS_TOKEN)
+                || nextToken.match(GREATER_THAN_TOKEN) || nextToken.match(EQUALS_TOKEN) || nextToken.match(NOT_EQUALS_TOKEN)){
+            Expression rhs = parseAddExpr(tokens);
+            return new BinaryExpression(lhs, rhs, nextToken);
         }
         else{
-            throw new ParseException("Expected first or follow of simpleExpression'", 0);
+            return lhs;
         }
     }
 

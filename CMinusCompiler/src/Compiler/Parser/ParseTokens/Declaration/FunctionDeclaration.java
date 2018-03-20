@@ -33,12 +33,8 @@ public class FunctionDeclaration extends Declaration {
                 return null;
             } else if (nextToken.match(INT_TOKEN)) {
                 params = Parameter.parseParameterList(tokens);
-                if (tokens.getNextToken().match(CLOSE_PARENS_TOKEN)) {
-                    compoundStatement = CompoundStatement.parseCompoundStatement(tokens);
-                    return new FunctionDeclaration(typeSpecifier, id, params, compoundStatement);
-                } else {
-                    throw new ParseException("PARSE ERROR", 4);
-                }
+                compoundStatement = CompoundStatement.parseCompoundStatement(tokens);
+                return new FunctionDeclaration(typeSpecifier, id, params, compoundStatement);
             } else {
                 throw new ParseException("PARSE ERROR", 4);
             }

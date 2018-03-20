@@ -12,7 +12,7 @@ public class Declaration {
         Token typeSpecifier = tokens.getNextToken();
         Token idToken = tokens.getNextToken();
 
-        if (!(typeSpecifier.match(VOID_TOKEN) || typeSpecifier.match(INT_TOKEN)) || idToken.match(ID_TOKEN)) {
+        if (!(typeSpecifier.match(VOID_TOKEN) || typeSpecifier.match(INT_TOKEN)) || !idToken.match(ID_TOKEN)) {
             throw new ParseException("PARSE ERROR", 5);
         }
         if (typeSpecifier.match(VOID_TOKEN)) {

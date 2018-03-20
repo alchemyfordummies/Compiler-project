@@ -10,7 +10,7 @@ import static Compiler.Scanner.Token.TokenType.*;
 
 public class Statement {
     public static Statement parseStatement(TokenList tokens) throws ParseException {
-        Token nextToken = tokens.getNextToken();
+        Token nextToken = tokens.viewNextToken();
 
         if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {
             return ExpressionStatement.parseExpressionStatement(tokens);
