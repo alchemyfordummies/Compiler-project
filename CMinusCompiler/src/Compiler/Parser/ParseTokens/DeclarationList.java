@@ -13,12 +13,11 @@ public class DeclarationList {
     private ArrayList<Declaration> declarations = new ArrayList<>();
 
     public ArrayList<Declaration> parseDeclarationList(TokenList tokens) throws ParseException {
-        Token nextToken = tokens.getNextToken();
+        Token nextToken = tokens.viewNextToken();
 
         while (nextToken.match(VOID_TOKEN) || nextToken.match(INT_TOKEN)) {
-            Declaration declaration = new Declaration();
-            declarations.add(declaration.parseDeclaration(tokens));
-            nextToken = tokens.getNextToken();
+            declarations.add(Declaration.parseDeclaration(tokens));
+            nextToken = tokens.viewNextToken();
         }
 
         if (declarations.size() == 0) {

@@ -8,7 +8,7 @@ import java.text.ParseException;
 import static Compiler.Scanner.Token.TokenType.*;
 
 public class Declaration {
-    public Declaration parseDeclaration(TokenList tokens) throws ParseException {
+    public static Declaration parseDeclaration(TokenList tokens) throws ParseException {
         Token typeSpecifier = tokens.getNextToken();
         Token idToken = tokens.getNextToken();
 
@@ -22,7 +22,7 @@ public class Declaration {
         }
     }
 
-    public Declaration parseDeclarationPrime(TokenList tokens, Token typeIdentifier, Token id) throws ParseException {
+    public static Declaration parseDeclarationPrime(TokenList tokens, Token typeIdentifier, Token id) throws ParseException {
         Token currToken = tokens.getNextToken();
         if (currToken.match(SEMICOLON_TOKEN)) {
             return new VarDeclaration(typeIdentifier, id);

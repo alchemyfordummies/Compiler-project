@@ -9,7 +9,7 @@ import java.text.ParseException;
 import static Compiler.Scanner.Token.TokenType.*;
 
 public class Statement {
-    public Statement parseStatement(TokenList tokens) throws ParseException {
+    public static Statement parseStatement(TokenList tokens) throws ParseException {
         Token nextToken = tokens.getNextToken();
 
         if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {

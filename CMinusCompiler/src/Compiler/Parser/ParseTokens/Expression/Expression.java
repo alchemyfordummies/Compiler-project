@@ -10,7 +10,7 @@ import static Compiler.Scanner.Token.TokenType.*;
 
 public class Expression {
 
-    public Expression parseExpression(TokenList tokens) throws ParseException{
+    public static Expression parseExpression(TokenList tokens) throws ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(ID_TOKEN)){
             return parseExpressionPrime(tokens, nextToken);
@@ -34,7 +34,7 @@ public class Expression {
         }
     }
 
-    public Expression parseExpressionPrime(TokenList tokens, Token idToken) throws ParseException{
+    public static Expression parseExpressionPrime(TokenList tokens, Token idToken) throws ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(ASSIGNMENT_TOKEN)){
             Expression lhs = new VarExpression(idToken, null);
@@ -62,7 +62,7 @@ public class Expression {
         }
     }
 
-    public Expression parseExpressionDoublePrime(TokenList tokens, Expression expression1) throws ParseException{
+    public static Expression parseExpressionDoublePrime(TokenList tokens, Expression expression1) throws ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(ASSIGNMENT_TOKEN)){
             Expression rhs = parseExpression(tokens);
@@ -77,7 +77,7 @@ public class Expression {
         }
     }
 
-    public Expression parseSimpleExpressionPrime(TokenList tokens, Expression expression1) throws  ParseException{
+    public static Expression parseSimpleExpressionPrime(TokenList tokens, Expression expression1) throws  ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(SEMICOLON_TOKEN) || nextToken.match(CLOSE_BRACKET_TOKEN) || nextToken.match(CLOSE_PARENS_TOKEN)
                 || nextToken.match(MULTIPLY_TOKEN) || nextToken.match(DIVIDE_TOKEN) || nextToken.match(COMMA_TOKEN)){
@@ -97,7 +97,7 @@ public class Expression {
         }
     }
 
-    public Expression parseAddExpr(TokenList tokens) throws ParseException{
+    public static Expression parseAddExpr(TokenList tokens) throws ParseException{
         Expression lhs = parseTerm(tokens);
         Token next = tokens.viewNextToken();
         while(next.match(PLUS_TOKEN) || next.match(MINUS_TOKEN)){
@@ -109,7 +109,7 @@ public class Expression {
         return lhs;
     }
 
-    public Expression parseAddExprPrime(TokenList tokens, Expression expression1) throws ParseException{
+    public static Expression parseAddExprPrime(TokenList tokens, Expression expression1) throws ParseException{
         Expression lhs = parseTermPrime(tokens, expression1);
         Token next = tokens.viewNextToken();
         while(next.match(PLUS_TOKEN) || next.match(MINUS_TOKEN)){
@@ -121,7 +121,7 @@ public class Expression {
         return lhs;
     }
 
-    public Expression parseTerm(TokenList tokens) throws ParseException{
+    public static Expression parseTerm(TokenList tokens) throws ParseException{
         Expression lhs = parseFactor(tokens);
         Token next = tokens.viewNextToken();
         while(next.match(MULTIPLY_TOKEN) || next.match(DIVIDE_TOKEN)){
@@ -133,7 +133,7 @@ public class Expression {
         return lhs;
     }
 
-    public Expression parseTermPrime(TokenList tokens, Expression expression1) throws ParseException{
+    public static Expression parseTermPrime(TokenList tokens, Expression expression1) throws ParseException{
         Token next = tokens.viewNextToken();
         while(next.match(MULTIPLY_TOKEN) || next.match(DIVIDE_TOKEN)){
             tokens.getNextToken();
@@ -144,7 +144,7 @@ public class Expression {
         return expression1;
     }
 
-    public Expression parseFactor(TokenList tokens) throws ParseException{
+    public static Expression parseFactor(TokenList tokens) throws ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(OPEN_PARENS_TOKEN)){
             Expression toReturn = parseExpression(tokens);
@@ -165,7 +165,7 @@ public class Expression {
         }
     }
 
-    public Expression parseVarCall(TokenList tokens, Token id) throws ParseException{
+    public static Expression parseVarCall(TokenList tokens, Token id) throws ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(OPEN_BRACKET_TOKEN)){
             Expression index = parseExpression(tokens);
@@ -199,7 +199,7 @@ public class Expression {
         }
     }
 
-    public List<Expression> parseArgs(TokenList tokens) throws ParseException{
+    public static List<Expression> parseArgs(TokenList tokens) throws ParseException{
         Token nextToken = tokens.viewNextToken();
         if(nextToken.match(CLOSE_PARENS_TOKEN)){
             return new ArrayList<>();
@@ -212,7 +212,7 @@ public class Expression {
         }
     }
 
-    public List<Expression> parseArgList(TokenList tokens) throws ParseException{
+    public static List<Expression> parseArgList(TokenList tokens) throws ParseException{
         List<Expression> args = new ArrayList<>();
         args.add(parseExpression(tokens));
         Token next = tokens.viewNextToken();

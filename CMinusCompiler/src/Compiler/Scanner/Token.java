@@ -1,5 +1,7 @@
 package Compiler.Scanner;
 
+import java.text.ParseException;
+
 public class Token {
     public enum TokenType {
         ELSE_TOKEN,
@@ -60,5 +62,14 @@ public class Token {
 
     public boolean match(TokenType tokenType){
         return this.tokenType == tokenType;
+    }
+
+    public boolean assertMatch(TokenType tokenType, String data) throws ParseException{
+        if(this.match(tokenType)){
+            return true;
+        }
+        else{
+            throw new ParseException("Expected " + data, 0);
+        }
     }
 }
