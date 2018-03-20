@@ -8,7 +8,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class SelectionStatement {
+public class SelectionStatement extends Statement {
     Expression conditional;
     Statement doIf;
     Statement doElse;

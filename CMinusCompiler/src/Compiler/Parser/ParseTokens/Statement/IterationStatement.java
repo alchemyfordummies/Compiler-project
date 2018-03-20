@@ -3,14 +3,12 @@ package Compiler.Parser.ParseTokens.Statement;
 import Compiler.Parser.ParseTokens.Expression.Expression;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
-import com.sun.xml.internal.fastinfoset.util.PrefixArray;
 
-import javax.swing.plaf.nimbus.State;
 import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class IterationStatement {
+public class IterationStatement extends Statement {
     Expression conditional;
     Statement statement;
 

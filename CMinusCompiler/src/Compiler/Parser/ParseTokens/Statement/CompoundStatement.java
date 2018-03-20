@@ -1,31 +1,25 @@
 package Compiler.Parser.ParseTokens.Statement;
 
-import Compiler.Parser.ParseTokens.Declaration.Declaration;
 import Compiler.Parser.ParseTokens.Declaration.VarDeclaration;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
-import com.sun.org.apache.bcel.internal.generic.RET;
-import com.sun.xml.internal.bind.v2.model.core.ID;
-import org.omg.CORBA.IDLTypeOperations;
-
-import javax.swing.plaf.nimbus.State;
-
-import static Compiler.Scanner.Token.TokenType.*;
 
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompoundStatements extends Statement{
+import static Compiler.Scanner.Token.TokenType.*;
+
+public class CompoundStatement extends Statement{
     List<VarDeclaration> localDeclarations;
     List<Statement> statementList;
 
-    public CompoundStatements(List<VarDeclaration> localDeclarations, List<Statement> statementList){
+    public CompoundStatement(List<VarDeclaration> localDeclarations, List<Statement> statementList){
         this.localDeclarations = localDeclarations;
         this.statementList = statementList;
     }
 
-    public static CompoundStatements parseCompoundStatements(TokenList tokens) throws ParseException{
+    public static CompoundStatement parseCompoundStatement(TokenList tokens) throws ParseException{
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(OPEN_CURLY_BRACE_TOKEN)){
             List<VarDeclaration> varDecls = parseLocalDeclarations(tokens);
@@ -35,7 +29,7 @@ public class CompoundStatements extends Statement{
                 throw new ParseException("Expected close curly brace", 0);
             }
             else{
-                return new CompoundStatements(varDecls, statements);
+                return new CompoundStatement(varDecls, statements);
             }
         }
         else{

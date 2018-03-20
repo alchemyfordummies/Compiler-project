@@ -20,7 +20,7 @@ public class Parameter {
         this.isArray = isArray;
     }
 
-    public ArrayList<Parameter> parseParameterList(TokenList tokens) throws ParseException {
+    public static ArrayList<Parameter> parseParameterList(TokenList tokens) throws ParseException {
         Token nextToken = tokens.getNextToken();
         ArrayList<Parameter> parameters = new ArrayList<>();
 
@@ -45,7 +45,7 @@ public class Parameter {
         }
     }
 
-    public Parameter parseParameter(TokenList tokens) throws ParseException {
+    public static Parameter parseParameter(TokenList tokens) throws ParseException {
         Token nextToken = tokens.getNextToken();
         Parameter parameter = new Parameter();
 

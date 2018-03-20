@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens.Declaration;
 
 import Compiler.Parser.ParseTokens.Parameter;
+import Compiler.Parser.ParseTokens.Statement.CompoundStatement;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -29,9 +30,9 @@ public class FunctionDeclaration extends Declaration {
         if (tokens.getNextToken().match(OPEN_PARENS_TOKEN)) {
             Token nextToken = tokens.viewNextToken();
             if (nextToken.match(VOID_TOKEN)) {
-                params = null;
+                return null;
             } else if (nextToken.match(INT_TOKEN)) {
-                params = Parameter.parseParamList(tokens);
+                params = Parameter.parseParameterList(tokens);
                 if (tokens.getNextToken().match(CLOSE_PARENS_TOKEN)) {
                     compoundStatement = CompoundStatement.parseCompoundStatement(tokens);
                     return new FunctionDeclaration(typeSpecifier, id, params, compoundStatement);

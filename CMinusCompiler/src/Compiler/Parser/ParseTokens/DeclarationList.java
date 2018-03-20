@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import static Compiler.Scanner.Token.TokenType.*;
 
 public class DeclarationList {
-    private ArrayList<Declaration> declarations = new ArrayList<>();
+    private static ArrayList<Declaration> declarations = new ArrayList<>();
 
-    public ArrayList<Declaration> parseDeclarationList(TokenList tokens) throws ParseException {
+    public static ArrayList<Declaration> parseDeclarationList(TokenList tokens) throws ParseException {
         Token nextToken = tokens.viewNextToken();
 
         while (nextToken.match(VOID_TOKEN) || nextToken.match(INT_TOKEN)) {

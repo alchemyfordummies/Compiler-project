@@ -13,25 +13,15 @@ public class Statement {
         Token nextToken = tokens.getNextToken();
 
         if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {
-            // ExpressionStatement expressionStatement = new ExpressionStatement();
-            // expressionStatement.parseExpressionStatement(tokens);
-            // return expressionStatement;
+            return ExpressionStatement.parseExpressionStatement(tokens);
         } else if (nextToken.match(OPEN_CURLY_BRACE_TOKEN)) {
-            // CompoundStatement compoundStatement = new CompoundStatement();
-            // compoundStatement.parseCompoundStatement(tokens);
-            // return compoundStatement;
+            return CompoundStatement.parseCompoundStatement(tokens);
         } else if (nextToken.match(IF_TOKEN)) {
-            // SelectionStatement selectionStatement = new SelectionStatement();
-            // selectionStatement.parseSelectionStatement(tokens);
-            // return selectionStatement;
+            return SelectionStatement.parseSelectionStatement(tokens);
         } else if (nextToken.match(WHILE_TOKEN)) {
-            // IterationStatement iterationStatement = new IterationStatement();
-            // iterationStatement.parseIterationStatement(tokens);
-            // return iterationStatement;
+            return IterationStatement.parseIterationStatement(tokens);
         } else if (nextToken.match(RETURN_TOKEN)) {
-            // ReturnStatement returnStatement = new ReturnStatement();
-            // returnStatement.parseReturnStatement(tokens);
-            // return returnStatement;
+            return ReturnStatement.parseReturnStatement(tokens);
         } else {
             throw new ParseException("Invalid token for statement", 8);
         }
