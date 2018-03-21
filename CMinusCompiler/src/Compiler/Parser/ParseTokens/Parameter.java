@@ -74,6 +74,9 @@ public class Parameter implements Printable {
 
     @Override
     public String print(String padding) {
-        return null;
+        String toPrint = padding + "Parameter:\n";
+        toPrint += padding + "ID{" + id.getTokenData() + "}\n";
+        toPrint += padding + "IsArray{" + isArray + "}\n";
+        return toPrint;
     }
 }

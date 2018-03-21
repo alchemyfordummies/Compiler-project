@@ -45,7 +45,7 @@ public class ExpressionStatement extends Statement implements Printable {
         } else {
             toPrint += "none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         return toPrint;
     }
 }

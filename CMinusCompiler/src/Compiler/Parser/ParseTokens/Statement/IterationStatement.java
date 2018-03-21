@@ -54,9 +54,9 @@ public class IterationStatement extends Statement implements Printable {
             toPrint += conditional.print(padding + "  ");
         }
         else{
-            toPrint += "none\n";
+            toPrint += padding + "none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         toPrint += padding + "Statement{\n";
         if(statement != null){
             toPrint += statement.print(padding + "  ");
@@ -64,7 +64,7 @@ public class IterationStatement extends Statement implements Printable {
         else{
             toPrint += "none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         return toPrint;
     }
 }

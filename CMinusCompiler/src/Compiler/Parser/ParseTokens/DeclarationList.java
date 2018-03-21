@@ -34,9 +34,10 @@ public class DeclarationList implements Printable{
         toPrint += padding + "Declarations{\n";
         for(Declaration decl : declarations){
             toPrint += decl.print(padding + "");
-            toPrint += ",\n";
+            if(declarations.indexOf(decl) != declarations.size() - 1){
+                toPrint += ",\n";
+            }
         }
-        toPrint = toPrint.substring(0, toPrint.length() - 2);
         toPrint += padding + "}\n";
         return toPrint;
     }

@@ -20,9 +20,9 @@ public class VarExpression extends Expression implements Printable {
         if (index != null) {
             toPrint += index.print(padding + "  ");
         } else {
-            toPrint += "none\n";
+            toPrint += padding + "none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         return toPrint;
     }
 }

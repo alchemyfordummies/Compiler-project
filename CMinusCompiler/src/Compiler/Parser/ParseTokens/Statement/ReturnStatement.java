@@ -46,9 +46,9 @@ public class ReturnStatement extends Statement implements Printable{
             toPrint += expression.print(padding + "  ");
         }
         else{
-            toPrint += "none\n";
+            toPrint += padding + "none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         return toPrint;
     }
 }

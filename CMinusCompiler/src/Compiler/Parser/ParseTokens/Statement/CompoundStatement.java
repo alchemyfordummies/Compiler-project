@@ -103,28 +103,28 @@ public class CompoundStatement extends Statement implements Printable {
     @Override
     public String print(String padding) {
         String toPrint = padding + "CompoundStatement:\n";
-        toPrint += "VarDecls{\n";
+        toPrint += padding + "VarDecls{\n";
         if (!localDeclarations.isEmpty()) {
             for (VarDeclaration varDecl : localDeclarations) {
-                toPrint += varDecl.print(padding + "  ");
-                toPrint += ",\n";
+                toPrint += padding + varDecl.print(padding + "  ");
+                if(localDeclarations.indexOf(varDecl) != localDeclarations.size() - 1)
+                    toPrint += padding + ",\n";
             }
-            toPrint = toPrint.substring(0, toPrint.length() - 2);
         } else {
-            toPrint += "none\n";
+            toPrint += padding + "none\n";
         }
-        toPrint += "}\n";
-        toPrint += "Statement{\n";
+        toPrint += padding + "}\n";
+        toPrint += padding + "Statement{\n";
         if (!statementList.isEmpty()) {
             for (Statement s : statementList) {
                 toPrint += s.print(padding + "  ");
-                toPrint += ",\n";
+                if(statementList.indexOf(s) != statementList.size() - 1)
+                    toPrint += padding + ",\n";
             }
-            toPrint = toPrint.substring(0, toPrint.length() - 2);
         } else {
-            toPrint += "none\n";
+            toPrint += padding + "none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         return toPrint;
     }
 }

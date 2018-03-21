@@ -22,13 +22,14 @@ public class CallExpression extends Expression implements Printable {
         if (!argList.isEmpty()) {
             for (Expression e : argList) {
                 toPrint += e.print(padding + "  ");
-                toPrint += ",\n";
+                if(argList.indexOf(e) != argList.size() - 1){
+                    toPrint += padding + ",\n";
+                }
             }
-            toPrint = toPrint.substring(0, toPrint.length() - 2);
         } else {
             toPrint += padding + "  none\n";
         }
-        toPrint += "}\n";
+        toPrint += padding + "}\n";
         return toPrint;
     }
 }

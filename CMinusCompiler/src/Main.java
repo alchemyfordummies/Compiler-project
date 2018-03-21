@@ -25,9 +25,10 @@ public class Main {
             toPrint += "Declarations{\n";
             for(Declaration decl : declarations){
                 toPrint += decl.print("  ");
-                toPrint += ",\n";
+                if(declarations.indexOf(decl) != declarations.size() - 1){
+                    toPrint += ",\n";
+                }
             }
-            toPrint = toPrint.substring(0, toPrint.length() - 2);
             toPrint += "}\n";
             PrintWriter writer = new PrintWriter("out.txt", "UTF-8");
             writer.print(toPrint);
