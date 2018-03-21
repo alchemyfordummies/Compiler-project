@@ -8,7 +8,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class Statement implements Printable{
+public class Statement implements Printable {
     public static Statement parseStatement(TokenList tokens) throws ParseException {
         Token nextToken = tokens.viewNextToken();
         if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {
@@ -27,7 +27,7 @@ public class Statement implements Printable{
     }
 
     @Override
-    public String print(String padding){
+    public String print(String padding) {
         return "";
     }
 }

@@ -13,39 +13,38 @@ public class SelectionStatement extends Statement {
     Statement doIf;
     Statement doElse;
 
-    public SelectionStatement(Expression conditional, Statement doIf, Statement doElse){
+    public SelectionStatement(Expression conditional, Statement doIf, Statement doElse) {
         this.conditional = conditional;
         this.doIf = doIf;
         this.doElse = doElse;
     }
 
-    public static SelectionStatement parseSelectionStatement(TokenList tokens) throws ParseException{
+    public static SelectionStatement parseSelectionStatement(TokenList tokens) throws ParseException {
         Token nextToken = tokens.getNextToken();
-        if(nextToken.assertMatch(IF_TOKEN, "if")){
+        if (nextToken.assertMatch(IF_TOKEN, "if")) {
             nextToken = tokens.getNextToken();
-            if(nextToken.assertMatch(OPEN_PARENS_TOKEN, "( token")){
+            if (nextToken.assertMatch(OPEN_PARENS_TOKEN, "( token")) {
                 nextToken = tokens.viewNextToken();
-                if(nextToken.match(ID_TOKEN) || nextToken.match(NUM_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN)){
+                if (nextToken.match(ID_TOKEN) || nextToken.match(NUM_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN)) {
                     Expression expr = Expression.parseExpression(tokens);
                     nextToken = tokens.getNextToken();
-                    if(nextToken.assertMatch(CLOSE_PARENS_TOKEN, ")")){
+                    if (nextToken.assertMatch(CLOSE_PARENS_TOKEN, ")")) {
                         nextToken = tokens.viewNextToken();
-                        if(nextToken.match(ID_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN) || nextToken.match(NUM_TOKEN)
+                        if (nextToken.match(ID_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN) || nextToken.match(NUM_TOKEN)
                                 || nextToken.match(SEMICOLON_TOKEN) || nextToken.match(IF_TOKEN) || nextToken.match(WHILE_TOKEN)
-                                || nextToken.match(RETURN_TOKEN) || nextToken.match(OPEN_CURLY_BRACE_TOKEN)){
+                                || nextToken.match(RETURN_TOKEN) || nextToken.match(OPEN_CURLY_BRACE_TOKEN)) {
                             Statement ifs = Statement.parseStatement(tokens);
                             nextToken = tokens.viewNextToken();
-                            if(nextToken.match(ELSE_TOKEN)){
+                            if (nextToken.match(ELSE_TOKEN)) {
                                 tokens.getNextToken();
                                 nextToken = tokens.viewNextToken();
-                                if(nextToken.match(ID_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN) || nextToken.match(NUM_TOKEN)
+                                if (nextToken.match(ID_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN) || nextToken.match(NUM_TOKEN)
                                         || nextToken.match(SEMICOLON_TOKEN) || nextToken.match(IF_TOKEN) || nextToken.match(WHILE_TOKEN)
-                                        || nextToken.match(RETURN_TOKEN) || nextToken.match(OPEN_CURLY_BRACE_TOKEN)){
+                                        || nextToken.match(RETURN_TOKEN) || nextToken.match(OPEN_CURLY_BRACE_TOKEN)) {
                                     Statement els = Statement.parseStatement(tokens);
                                     return new SelectionStatement(expr, ifs, els);
                                 }
-                            }
-                            else{
+                            } else {
                                 return new SelectionStatement(expr, ifs, null);
                             }
                         }

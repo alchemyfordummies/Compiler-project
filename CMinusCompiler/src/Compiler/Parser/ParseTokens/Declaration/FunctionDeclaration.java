@@ -43,13 +43,13 @@ public class FunctionDeclaration extends Declaration implements Printable {
     }
 
     @Override
-    public String print(String padding){
+    public String print(String padding) {
         String printValue = padding + "FunctionDeclaration:\n";
         printValue += padding + "TypeSpecifier{" + typeSpecifier.getTokenType() + "\n}";
         printValue += padding + "ID{" + id.getTokenData() + "}\n";
         printValue += padding + "Params{\n";
-        if(!params.isEmpty()){
-            for(Parameter param : params){
+        if (!params.isEmpty()) {
+            for (Parameter param : params) {
                 printValue += param.print(padding + "  ") + ",\n";
             }
             printValue = printValue.substring(0, printValue.length() - 2);

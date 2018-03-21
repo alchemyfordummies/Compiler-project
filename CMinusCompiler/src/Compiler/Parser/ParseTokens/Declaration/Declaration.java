@@ -8,14 +8,14 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class Declaration implements Printable{
+public class Declaration implements Printable {
     public static Declaration parseDeclaration(TokenList tokens) throws ParseException {
         Token typeSpecifier = tokens.getNextToken();
         Token idToken = tokens.getNextToken();
-        if(idToken.match(ID_TOKEN)){
+        if (idToken.match(ID_TOKEN)) {
             if (typeSpecifier.match(VOID_TOKEN)) {
                 return FunctionDeclaration.parseFunctionDeclarationPrime(tokens, typeSpecifier, idToken);
-            } else if(typeSpecifier.match(INT_TOKEN)){
+            } else if (typeSpecifier.match(INT_TOKEN)) {
                 return parseDeclarationPrime(tokens, typeSpecifier, idToken);
             }
             throw new ParseException("Expected void or int", tokens.getIndex());
@@ -42,7 +42,7 @@ public class Declaration implements Printable{
     }
 
     @Override
-    public String print(String padding){
+    public String print(String padding) {
         return padding + "DeclarationTests:";
     }
 }

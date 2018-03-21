@@ -10,42 +10,39 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class ExpressionStatement  extends Statement implements Printable{
+public class ExpressionStatement extends Statement implements Printable {
     Expression expression;
 
-    public ExpressionStatement(Expression expression){
+    public ExpressionStatement(Expression expression) {
         this.expression = expression;
     }
 
-    public static ExpressionStatement parseExpressionStatement(TokenList tokens) throws ParseException{
+    public static ExpressionStatement parseExpressionStatement(TokenList tokens) throws ParseException {
         Token currentToken = tokens.viewNextToken();
         if (currentToken.match(ID_TOKEN) || currentToken.match(NUM_TOKEN) || currentToken.match(OPEN_PARENS_TOKEN)) {
-             Expression expression = Expression.parseExpression(tokens);
-             currentToken = tokens.getNextToken();
-             if(currentToken.match(SEMICOLON_TOKEN)){
-                 return new ExpressionStatement(expression);
-             }
-             else{
-                 throw new ParseException("Expected semicolon", 0);
-             }
-        }
-        else if (currentToken.match(SEMICOLON_TOKEN)){
+            Expression expression = Expression.parseExpression(tokens);
+            currentToken = tokens.getNextToken();
+            if (currentToken.match(SEMICOLON_TOKEN)) {
+                return new ExpressionStatement(expression);
+            } else {
+                throw new ParseException("Expected semicolon", 0);
+            }
+        } else if (currentToken.match(SEMICOLON_TOKEN)) {
             tokens.getNextToken();
             return new ExpressionStatement(null);
-        }
-        else{
+        } else {
             throw new ParseException("Expected semicolon or expression", 2);
         }
     }
 
     @Override
-    public String print(String padding){
-        String toPrint = padding + "ExpressionStatement:\n";;
+    public String print(String padding) {
+        String toPrint = padding + "ExpressionStatement:\n";
+        ;
         toPrint += padding + "Expression{\n";
-        if(expression != null){
+        if (expression != null) {
             toPrint += expression.print(padding + "  ");
-        }
-        else{
+        } else {
             toPrint += "none\n";
         }
         toPrint += "}\n";
