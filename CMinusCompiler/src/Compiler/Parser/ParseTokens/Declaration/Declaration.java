@@ -43,7 +43,6 @@ public class Declaration implements Printable{
 
     @Override
     public String print(String padding){
-        String toPrint = padding + "Declaration:";
-        return toPrint;
+        return padding + "DeclarationTests:";
     }
 }

@@ -125,7 +125,7 @@ public class CompoundStatement extends Statement implements Printable{
             toPrint += "none\n";
         }
         toPrint += "}\n";
-        toPrint += "Statements{\n";
+        toPrint += "Statement{\n";
         if(!statementList.isEmpty()){
             for(Statement s : statementList){
                 toPrint += s.print(padding + "  ");

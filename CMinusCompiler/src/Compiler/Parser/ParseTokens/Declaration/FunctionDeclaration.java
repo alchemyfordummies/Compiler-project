@@ -55,7 +55,7 @@ public class FunctionDeclaration extends Declaration implements Printable {
             printValue = printValue.substring(0, printValue.length() - 2);
         }
         printValue += padding + "}\n";
-        printValue += padding + "CompoundStatement{\n" + compoundStatement.print() + "}\n";
+        printValue += padding + "CompoundStatement{\n" + compoundStatement.print(padding + "  ") + "}\n";
         return printValue;
     }
 }
