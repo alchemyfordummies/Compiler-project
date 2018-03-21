@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens.Statement;
 
 import Compiler.Parser.ParseTokens.Declaration.VarDeclaration;
+import Compiler.Parser.ParseTokens.Expression.VarExpression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
@@ -110,7 +111,32 @@ public class CompoundStatement extends Statement implements Printable{
     }
 
     @Override
-    public String print() {
-        return null;
+    public String print(String padding) {
+        String toPrint = padding + "CompoundStatement:\n";
+        toPrint += "VarDecls{\n";
+        if(!localDeclarations.isEmpty()){
+            for(VarDeclaration varDecl : localDeclarations){
+                toPrint += varDecl.print(padding + "  ");
+                toPrint += ",\n";
+            }
+            toPrint = toPrint.substring(0, toPrint.length() - 2);
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        toPrint += "Statements{\n";
+        if(!statementList.isEmpty()){
+            for(Statement s : statementList){
+                toPrint += s.print(padding + "  ");
+                toPrint += ",\n";
+            }
+            toPrint = toPrint.substring(0, toPrint.length() - 2);
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        return toPrint;
     }
 }

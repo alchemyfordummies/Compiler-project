@@ -1,6 +1,6 @@
 package Compiler.Parser.ParseTokens.Statement;
 
-import Compiler.Parser.ParseTokens.ParseToken;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +8,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class Statement {
+public class Statement implements Printable{
     public static Statement parseStatement(TokenList tokens) throws ParseException {
         Token nextToken = tokens.viewNextToken();
         if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {
@@ -24,5 +24,10 @@ public class Statement {
         } else {
             throw new ParseException("Invalid token for statement", 8);
         }
+    }
+
+    @Override
+    public String print(String padding){
+        return "";
     }
 }

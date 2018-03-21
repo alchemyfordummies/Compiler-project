@@ -1,6 +1,8 @@
 package Compiler.Parser.ParseTokens.Statement;
 
+import Compiler.Parser.ParseTokens.Declaration.VarDeclaration;
 import Compiler.Parser.ParseTokens.Expression.Expression;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +10,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class ExpressionStatement  extends Statement {
+public class ExpressionStatement  extends Statement implements Printable{
     Expression expression;
 
     public ExpressionStatement(Expression expression){
@@ -34,5 +36,19 @@ public class ExpressionStatement  extends Statement {
         else{
             throw new ParseException("Expected semicolon or expression", 2);
         }
+    }
+
+    @Override
+    public String print(String padding){
+        String toPrint = padding + "ExpressionStatement:\n";;
+        toPrint += padding + "Expression{\n";
+        if(expression != null){
+            toPrint += expression.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        return toPrint;
     }
 }

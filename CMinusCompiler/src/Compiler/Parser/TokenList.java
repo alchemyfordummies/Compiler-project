@@ -19,6 +19,10 @@ public class TokenList {
         return currToken;
     }
 
+    public int getIndex(){
+        return index;
+    }
+
     public Token viewNextToken(){
         return tokens.get(index);
     }

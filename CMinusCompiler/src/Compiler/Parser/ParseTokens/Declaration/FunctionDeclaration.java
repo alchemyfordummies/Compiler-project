@@ -36,28 +36,26 @@ public class FunctionDeclaration extends Declaration implements Printable {
                 params = Parameter.parseParameterList(tokens);
                 compoundStatement = CompoundStatement.parseCompoundStatement(tokens);
                 return new FunctionDeclaration(typeSpecifier, id, params, compoundStatement);
-            } else {
-                throw new ParseException("PARSE ERROR", 4);
             }
-        } else {
             throw new ParseException("PARSE ERROR", 4);
         }
+        throw new ParseException("PARSE ERROR", 4);
     }
 
     @Override
-    public String print(){
-        String printValue = "FunctionDeclaration:";
-        printValue += "TypeSpecifier{" + typeSpecifier.getTokenType() + "}";
-        printValue += "ID{" + id.getTokenData() + "}";
-        printValue += "Params{";
+    public String print(String padding){
+        String printValue = padding + "FunctionDeclaration:\n";
+        printValue += padding + "TypeSpecifier{" + typeSpecifier.getTokenType() + "\n}";
+        printValue += padding + "ID{" + id.getTokenData() + "}\n";
+        printValue += padding + "Params{\n";
         if(!params.isEmpty()){
             for(Parameter param : params){
-                printValue += param.print() + ",";
+                printValue += param.print(padding + "  ") + ",\n";
             }
-            printValue = printValue.substring(0, printValue.length() - 1);
+            printValue = printValue.substring(0, printValue.length() - 2);
         }
-        printValue += "}";
-        printValue += "CompoundStatement{" + compoundStatement.print() + "}";
+        printValue += padding + "}\n";
+        printValue += padding + "CompoundStatement{\n" + compoundStatement.print() + "}\n";
         return printValue;
     }
 }

@@ -1,4 +1,5 @@
 package Compiler.Parser.ParseTokens.Expression;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +9,7 @@ import java.util.List;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class Expression {
+public class Expression implements Printable {
 
     public static Expression parseExpression(TokenList tokens) throws ParseException{
         Token nextToken = tokens.getNextToken();
@@ -39,7 +40,7 @@ public class Expression {
         if(nextToken.match(ASSIGNMENT_TOKEN)){
             Expression lhs = new VarExpression(idToken, null);
             Expression rhs = parseExpression(tokens);
-            return new BinaryExpression(lhs, rhs, nextToken);
+            return new AssignmentExpression(lhs, rhs);
         }
         else if(nextToken.match(OPEN_BRACKET_TOKEN)){
             Expression index = parseExpression(tokens);
@@ -70,7 +71,7 @@ public class Expression {
         Token nextToken = tokens.getNextToken();
         if(nextToken.match(ASSIGNMENT_TOKEN)){
             Expression rhs = parseExpression(tokens);
-            return new BinaryExpression(expression1, rhs, nextToken);
+            return new AssignmentExpression(expression1, rhs);
         }
         else if(nextToken.match(MULTIPLY_TOKEN) || nextToken.match(DIVIDE_TOKEN) || nextToken.match(SEMICOLON_TOKEN)
                 || nextToken.match(CLOSE_BRACKET_TOKEN) || nextToken.match(CLOSE_PARENS_TOKEN) || nextToken.match(COMMA_TOKEN)){
@@ -220,5 +221,10 @@ public class Expression {
             next = tokens.viewNextToken();
         }
         return args;
+    }
+
+    @Override
+    public String print(String padding){
+        return "";
     }
 }
