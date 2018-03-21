@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens.Statement;
 
 import Compiler.Parser.ParseTokens.Expression.Expression;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +9,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class SelectionStatement extends Statement {
+public class SelectionStatement extends Statement implements Printable{
     Expression conditional;
     Statement doIf;
     Statement doElse;
@@ -57,5 +58,35 @@ public class SelectionStatement extends Statement {
             throw new ParseException("Expected (", 0);
         }
         throw new ParseException("Expected if", 0);
+    }
+
+    @Override
+    public String print(String padding){
+        String toPrint = padding + "IterationStatement:\n";
+        toPrint += padding + "Conditional{\n";
+        if(conditional != null){
+            toPrint += conditional.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        toPrint += padding + "DoIf{\n";
+        if(doIf != null){
+            toPrint += doIf.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        toPrint += padding + "DoElse{\n";
+        if(doElse != null){
+            toPrint += doElse.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        return toPrint;
     }
 }

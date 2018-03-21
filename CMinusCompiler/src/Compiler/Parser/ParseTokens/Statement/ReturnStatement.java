@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens.Statement;
 
 import Compiler.Parser.ParseTokens.Expression.Expression;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +9,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class ReturnStatement extends Statement {
+public class ReturnStatement extends Statement implements Printable{
     Expression expression;
 
     public ReturnStatement(Expression expression) {
@@ -35,5 +36,19 @@ public class ReturnStatement extends Statement {
         } else {
             throw new ParseException("Expected return", 0);
         }
+    }
+
+    @Override
+    public String print(String padding){
+        String toPrint = padding + "ReturnStatement:\n";
+        toPrint += padding + "ReturnValue{\n";
+        if(expression != null){
+            toPrint += expression.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        return toPrint;
     }
 }

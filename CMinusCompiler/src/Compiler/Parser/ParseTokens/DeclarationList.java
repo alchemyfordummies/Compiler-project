@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens;
 
 import Compiler.Parser.ParseTokens.Declaration.Declaration;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class DeclarationList {
+public class DeclarationList implements Printable{
     private static ArrayList<Declaration> declarations = new ArrayList<>();
 
     public static ArrayList<Declaration> parseDeclarationList(TokenList tokens) throws ParseException {
@@ -25,5 +26,18 @@ public class DeclarationList {
         } else {
             return declarations;
         }
+    }
+
+    @Override
+    public String print(String padding){
+        String toPrint = padding + "DeclList:\n";
+        toPrint += padding + "Declarations{\n";
+        for(Declaration decl : declarations){
+            toPrint += decl.print(padding + "");
+            toPrint += ",\n";
+        }
+        toPrint = toPrint.substring(0, toPrint.length() - 2);
+        toPrint += padding + "}\n";
+        return toPrint;
     }
 }

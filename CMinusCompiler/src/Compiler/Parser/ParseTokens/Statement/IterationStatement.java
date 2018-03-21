@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens.Statement;
 
 import Compiler.Parser.ParseTokens.Expression.Expression;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +9,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class IterationStatement extends Statement {
+public class IterationStatement extends Statement implements Printable {
     Expression conditional;
     Statement statement;
 
@@ -43,5 +44,27 @@ public class IterationStatement extends Statement {
             throw new ParseException("Expected statement", 0);
         }
         throw new ParseException("Expected statement", 0);
+    }
+
+    @Override
+    public String print(String padding){
+        String toPrint = padding + "IterationStatement:\n";
+        toPrint += padding + "Conditional{\n";
+        if(conditional != null){
+            toPrint += conditional.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        toPrint += padding + "Statement{\n";
+        if(statement != null){
+            toPrint += statement.print(padding + "  ");
+        }
+        else{
+            toPrint += "none\n";
+        }
+        toPrint += "}\n";
+        return toPrint;
     }
 }
