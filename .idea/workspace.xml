@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7d05c87-97f1-40bd-9532-0790aa01f9d1" name="Default" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java" />
@@ -14,6 +15,18 @@
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Main.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Main.java" />
+=======
+      <change beforePath="" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest/DeclarationTest1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/FunctionDeclarationTest/FunctionDeclarationTest.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/DeclarationListTest1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/ParseTest.cm" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTests.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/FunctionDeclarationTests.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/VarDeclarationTests.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/DeclarationListTests.java" afterPath="" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,6 +40,7 @@
     <SUITE FILE_PATH="coverage/Compiler_project$Main.coverage" NAME="Main Coverage Results" MODIFIED="1521601971723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="DeclarationList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java">
@@ -129,6 +143,48 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="FunctionDeclaration.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="737">
+                  <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="FunctionDeclarationTest.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/FunctionDeclarationTest/FunctionDeclarationTest.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParseTest.cm" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/ParseTest.cm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> Stashed changes
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -207,8 +263,21 @@
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Main.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java" />
+=======
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Parameter.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/ParseToken.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest1.txt" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/DeclarationListTest1" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest1" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest2" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest3" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest/DeclarationTest4" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/ParseTest.cm" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -332,6 +401,48 @@
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CMinusCompiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Declaration" type="462c0819:PsiDirectoryNode" />
+              <item name="DeclarationTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMinusCompiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Declaration" type="462c0819:PsiDirectoryNode" />
+              <item name="FunctionDeclarationTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMinusCompiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Expression" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMinusCompiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="CMinusCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Statement" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -348,6 +459,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tim\IdeaProjects\CMinusCompiler\CMinusCompiler\src\Compiler\Parser\Tests\Declaration\DeclarationTest" />
+      <recent name="C:\Users\Tim\IdeaProjects\CMinusCompiler\CMinusCompiler\src\Compiler\Parser\Tests\Declaration" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
@@ -523,10 +638,17 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31813362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6235419" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25885418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23314917" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -535,11 +657,35 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37539765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< Updated upstream
+=======
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37539765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31813362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31049722" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25906184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -576,56 +722,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Tree/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/text/ParseException.java" />
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Tree/AbstractSyntaxTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/JflexScanner/JFlexScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/cminustest2.cm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/CMinusParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -646,6 +742,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+<<<<<<< Updated upstream
+=======
+          <folding>
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#869#870#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
@@ -663,8 +773,8 @@
         <state relative-caret-position="918">
           <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
           <folding>
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1289#1290#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,6 +793,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -690,6 +801,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/FunctionDeclarationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -701,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,11 +835,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+<<<<<<< Updated upstream
           <folding />
+=======
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Statement/ReturnStatementTests.kt" />
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/cminustest.cm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Expression/NumExpressionTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -791,6 +915,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+<<<<<<< Updated upstream
+=======
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -802,6 +930,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/Declaration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -810,6 +939,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -852,17 +983,33 @@
         <state relative-caret-position="448">
           <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="e#510#511#0" expanded="true" />
             <element signature="e#554#555#0" expanded="true" />
+=======
+            <element signature="e#9326#9327#0" expanded="false" />
+            <element signature="e#9351#9352#0" expanded="false" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="170">
           <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding />
+=======
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#236#237#0" expanded="false" />
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -892,16 +1039,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="187">
           <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
+=======
+        <state relative-caret-position="306">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#554#555#0" expanded="false" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/VarExpression.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="323">
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+=======
+        <state relative-caret-position="289">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
@@ -916,14 +1077,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="269">
           <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
+=======
+        <state relative-caret-position="323">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="e#1213#1214#0" expanded="false" />
+            <element signature="e#1238#1239#0" expanded="false" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="320">
           <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
@@ -934,30 +1105,136 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+=======
+        <state relative-caret-position="442">
+          <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+          <folding>
+            <element signature="e#2475#2476#0" expanded="false" />
+            <element signature="e#2502#2503#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/ParseToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/DeclarationListTest1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest/DeclarationTest1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest/DeclarationTest2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+=======
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest/DeclarationTest3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="119" column="51" lean-forward="true" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+=======
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/DeclarationTest/DeclarationTest4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/Declaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/Declaration/FunctionDeclarationTest/FunctionDeclarationTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="425">
           <caret line="58" column="109" lean-forward="false" selection-start-line="58" selection-start-column="109" selection-end-line="58" selection-end-column="109" />
+=======
+        <state relative-caret-position="737">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Tests/ParseTest.cm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
