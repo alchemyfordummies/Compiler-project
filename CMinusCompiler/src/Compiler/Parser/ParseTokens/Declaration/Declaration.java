@@ -1,5 +1,6 @@
 package Compiler.Parser.ParseTokens.Declaration;
 
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -7,7 +8,7 @@ import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class Declaration {
+public class Declaration implements Printable{
     public static Declaration parseDeclaration(TokenList tokens) throws ParseException {
         Token typeSpecifier = tokens.getNextToken();
         Token idToken = tokens.getNextToken();
@@ -38,5 +39,10 @@ public class Declaration {
         } else {
             throw new ParseException("PARSE ERROR", 5);
         }
+    }
+
+    @Override
+    public String print(){
+        return "";
     }
 }

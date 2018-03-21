@@ -1,5 +1,6 @@
 package Compiler.Parser.ParseTokens;
 
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class Parameter {
+public class Parameter implements Printable {
     private Token id;
     private boolean isArray;
 
@@ -69,5 +70,10 @@ public class Parameter {
         } else {
             throw new ParseException("Invalid token for parameter", 6);
         }
+    }
+
+    @Override
+    public String print() {
+        return null;
     }
 }

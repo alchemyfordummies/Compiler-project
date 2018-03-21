@@ -52,6 +52,13 @@ public class Expression {
                 throw new ParseException("Expected ]", 0);
             }
         }
+        else if(nextToken.match(OPEN_PARENS_TOKEN)){
+            List<Expression> args = parseArgs(tokens);
+            if(tokens.getNextToken().match(CLOSE_PARENS_TOKEN)){
+                return new CallExpression(idToken, args);
+            }
+            throw new ParseException("Expected ) token", 0);
+        }
         else{
             tokens.ungetToken();
             Expression varExpression = new VarExpression(idToken, null);
@@ -76,9 +83,10 @@ public class Expression {
 
     public static Expression parseSimpleExpressionPrime(TokenList tokens, Expression expression1) throws  ParseException{
         Expression lhs = parseAddExprPrime(tokens, expression1);
-        Token nextToken = tokens.getNextToken();
+        Token nextToken = tokens.viewNextToken();
         if (nextToken.match(LESS_THAN_EQUALS_TOKEN) || nextToken.match(LESS_THAN_TOKEN) || nextToken.match(GREATER_THAN_EQUALS_TOKEN)
                 || nextToken.match(GREATER_THAN_TOKEN) || nextToken.match(EQUALS_TOKEN) || nextToken.match(NOT_EQUALS_TOKEN)){
+            tokens.getNextToken();
             Expression rhs = parseAddExpr(tokens);
             return new BinaryExpression(lhs, rhs, nextToken);
         }

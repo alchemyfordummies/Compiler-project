@@ -25,7 +25,11 @@ public class ReturnStatement extends Statement {
             }
             else if(nextToken.match(ID_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN) || nextToken.match(NUM_TOKEN)){
                 Expression expression = Expression.parseExpression(tokens);
-                return new ReturnStatement(expression);
+                nextToken = tokens.getNextToken();
+                if(nextToken.match(SEMICOLON_TOKEN)){
+                    return new ReturnStatement(expression);
+                }
+                throw new ParseException("Expected ;", 10);
             }
             else{
                 throw new ParseException("Expected semicolon or expression", 0);

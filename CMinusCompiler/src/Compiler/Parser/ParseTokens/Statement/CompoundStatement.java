@@ -1,6 +1,7 @@
 package Compiler.Parser.ParseTokens.Statement;
 
 import Compiler.Parser.ParseTokens.Declaration.VarDeclaration;
+import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
-public class CompoundStatement extends Statement{
+public class CompoundStatement extends Statement implements Printable{
     List<VarDeclaration> localDeclarations;
     List<Statement> statementList;
 
@@ -26,10 +27,10 @@ public class CompoundStatement extends Statement{
             List<Statement> statements = parseStatementList(tokens);
             nextToken = tokens.getNextToken();
             if(nextToken.match(CLOSE_CURLY_BRACE_TOKEN)){
-                throw new ParseException("Expected close curly brace", 0);
-            }
-            else{
                 return new CompoundStatement(varDecls, statements);
+            }
+            else {
+                throw new ParseException("Expected close curly brace", 0);
             }
         }
         else{
@@ -67,6 +68,7 @@ public class CompoundStatement extends Statement{
                     || nextToken.match(SEMICOLON_TOKEN) || nextToken.match(IF_TOKEN) || nextToken.match(WHILE_TOKEN)
                     || nextToken.match(RETURN_TOKEN) || nextToken.match(OPEN_CURLY_BRACE_TOKEN)){
                 statements.add(Statement.parseStatement(tokens));
+                nextToken = tokens.viewNextToken();
             }
             return statements;
         }
@@ -105,5 +107,10 @@ public class CompoundStatement extends Statement{
         else{
             throw new ParseException("Expected int token in varDecl", 1);
         }
+    }
+
+    @Override
+    public String print() {
+        return null;
     }
 }
