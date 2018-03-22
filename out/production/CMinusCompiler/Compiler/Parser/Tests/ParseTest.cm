@@ -1,0 +1,22 @@
+void empty (void) {
+
+}
+
+int name;
+int name[9];
+
+int main (void) {
+    int name;
+    int name[9];
+
+    int name;
+    9 * name;
+    name[4] = name[1 * 3] - 1;
+    (name + 3) * 9;
+
+    empty();
+
+    while (9 * 3 > 1 + 2) {
+
+    }
+}

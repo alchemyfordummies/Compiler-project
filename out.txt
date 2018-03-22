@@ -1,0 +1,48 @@
+Program:
+{
+  int result(a,b,c,d,e)
+  {
+      return{
+        +
+          +
+            +
+              +
+                e
+                d
+              c
+            b
+          a
+      }
+  }
+  void callResult(a,b)
+  {
+      int first
+      int second
+      int other
+        =
+          first
+          1
+        =
+          second
+          2
+        =
+          other
+          result(
+            first
+          ,
+            second
+          ,
+            +
+              first
+              1
+          ,
+            +
+              second
+              2
+          ,
+            +
+              first
+              second
+          )
+  }
+}

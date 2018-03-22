@@ -1,0 +1,24 @@
+int add (int a, int b) {
+	return a + b;
+}
+
+int aa;
+int bb;
+
+void main (void) {
+    int nums[9];
+
+    int numa;
+	numa = nums[0];
+    aa = add(nums[1], numa);
+    while (aa < numa) {
+		aa = aa + 1;
+		if(numa == 10){
+			return;
+		}
+		else{
+			numa = numa - 1;
+		}
+    }
+	return aa + numa * numa;
+}

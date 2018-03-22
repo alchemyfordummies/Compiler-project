@@ -1,0 +1,13 @@
+int result (int a, int b, int c, int d, int e) {
+    return (e + d + c + b + a);
+}
+
+void callResult (int a, int b) {
+    int first;
+    int second;
+    int other;
+    first = 1;
+    second = 2;
+
+    other = result(first, second, first + 1, second + 2, first + second);
+}

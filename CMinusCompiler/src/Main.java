@@ -14,7 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         String currentDir = Paths.get(".").toAbsolutePath().normalize().toString();
-        File cminusFile = new File(currentDir + "\\ParseTest2.cm");
+        File cminusFile = new File(currentDir + "\\ParseTest3.cm");
         CMinusScanner scanner = new CMinusScanner(cminusFile);
         scanner.scan();
         scanner.printAllTokens();

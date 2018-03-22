@@ -1,0 +1,15 @@
+package Compiler.Parser.ParseTokens;
+
+import Compiler.Scanner.Token;
+import Tree.TreeNode;
+
+<<<<<<< HEAD
+import java.util.ArrayList;
+
+=======
+//test commit
+>>>>>>> e366a48dc22c3c0231e2ab4da0867154937c4ec1
+public interface ParseToken {
+    public TreeNode parseToken(ArrayList<Token> tokens, int index);
+    public void match(Token token);
+}
