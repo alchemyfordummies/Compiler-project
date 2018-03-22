@@ -62,29 +62,19 @@ public class SelectionStatement extends Statement implements Printable{
 
     @Override
     public String print(String padding){
-        String toPrint = padding + "SelectionStatement:\n";
-        toPrint += padding + "Conditional{\n";
+        String toPrint = padding + "if(\n";
         if(conditional != null){
             toPrint += conditional.print(padding + "  ");
         }
-        else{
-            toPrint += "none\n";
-        }
-        toPrint += padding + "}\n";
-        toPrint += padding + "DoIf{\n";
+        toPrint += padding + ")\n";
+        toPrint += padding + "{\n";
         if(doIf != null){
             toPrint += doIf.print(padding + "  ");
         }
-        else{
-            toPrint += padding + "none\n";
-        }
         toPrint += padding + "}\n";
-        toPrint += padding + "DoElse{\n";
+        toPrint += padding + "else{\n";
         if(doElse != null){
             toPrint += doElse.print(padding + "  ");
-        }
-        else{
-            toPrint += padding + "none\n";
         }
         toPrint += padding + "}\n";
         return toPrint;

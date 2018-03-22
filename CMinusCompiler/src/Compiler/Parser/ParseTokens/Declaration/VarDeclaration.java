@@ -22,9 +22,8 @@ public class VarDeclaration extends Declaration implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "VarDecl:\n";
-        toPrint += padding + "ID{" + id.getTokenData() + "}\n";
-        toPrint += padding + "ArrayIndex{" + (arrayIndex == null ? "none" : arrayIndex.getTokenData()) + "}\n";
+        String toPrint = padding + typeSpecifier.printToken() + " " + id.printToken()
+                + (arrayIndex == null ? "\n" : ("[" + arrayIndex.printToken()) + "]\n");
         return toPrint;
     }
 }

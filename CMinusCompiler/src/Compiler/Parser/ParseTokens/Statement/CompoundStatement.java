@@ -42,7 +42,7 @@ public class CompoundStatement extends Statement implements Printable {
         Token nextToken = tokenList.viewNextToken();
         if (nextToken.match(ID_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN) || nextToken.match(NUM_TOKEN)
                 || nextToken.match(SEMICOLON_TOKEN) || nextToken.match(IF_TOKEN) || nextToken.match(WHILE_TOKEN)
-                || nextToken.match(ELSE_TOKEN) || nextToken.match(CLOSE_CURLY_BRACE_TOKEN)) {
+                || nextToken.match(ELSE_TOKEN) || nextToken.match(RETURN_TOKEN) || nextToken.match(CLOSE_CURLY_BRACE_TOKEN)) {
             return varDeclarations;
         } else if (nextToken.match(INT_TOKEN)) {
             while (nextToken.match(INT_TOKEN)) {
@@ -102,29 +102,17 @@ public class CompoundStatement extends Statement implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "CompoundStatement:\n";
-        toPrint += padding + "VarDecls{\n";
+        String toPrint = "";
         if (!localDeclarations.isEmpty()) {
             for (VarDeclaration varDecl : localDeclarations) {
-                toPrint += padding + varDecl.print(padding + "  ");
-                if(localDeclarations.indexOf(varDecl) != localDeclarations.size() - 1)
-                    toPrint += padding + ",\n";
+                toPrint += varDecl.print(padding + "  ");
             }
-        } else {
-            toPrint += padding + "none\n";
         }
-        toPrint += padding + "}\n";
-        toPrint += padding + "Statement{\n";
         if (!statementList.isEmpty()) {
             for (Statement s : statementList) {
                 toPrint += s.print(padding + "  ");
-                if(statementList.indexOf(s) != statementList.size() - 1)
-                    toPrint += padding + ",\n";
             }
-        } else {
-            toPrint += padding + "none\n";
         }
-        toPrint += padding + "}\n";
         return toPrint;
     }
 }

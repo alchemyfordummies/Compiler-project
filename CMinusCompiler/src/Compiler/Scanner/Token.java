@@ -56,6 +56,70 @@ public class Token {
         tokenData = data;
     }
 
+    public String printToken(){
+        switch(tokenType){
+            case ELSE_TOKEN:
+                return "else";
+            case IF_TOKEN:
+                return "if";
+            case INT_TOKEN:
+                return "int";
+            case RETURN_TOKEN:
+                return "return";
+            case VOID_TOKEN:
+                return "void";
+            case WHILE_TOKEN:
+                return "while";
+            case PLUS_TOKEN:
+                return "+";
+            case MINUS_TOKEN:
+                return "-";
+            case MULTIPLY_TOKEN:
+                return "*";
+            case DIVIDE_TOKEN:
+                return "/";
+            case LESS_THAN_TOKEN:
+                return "<";
+            case LESS_THAN_EQUALS_TOKEN:
+                return "<=";
+            case GREATER_THAN_TOKEN:
+                return ">";
+            case GREATER_THAN_EQUALS_TOKEN:
+                return ">=";
+            case EQUALS_TOKEN:
+                return "==";
+            case NOT_EQUALS_TOKEN:
+                return "!=";
+            case ASSIGNMENT_TOKEN:
+                return "=";
+            case SEMICOLON_TOKEN:
+                return ";";
+            case COMMA_TOKEN:
+                return ",";
+            case OPEN_PARENS_TOKEN:
+                return "(";
+            case CLOSE_PARENS_TOKEN:
+                return ")";
+            case OPEN_BRACKET_TOKEN:
+                return "[";
+            case CLOSE_BRACKET_TOKEN:
+                return "]";
+            case OPEN_CURLY_BRACE_TOKEN:
+                return "{";
+            case CLOSE_CURLY_BRACE_TOKEN:
+                return "}";
+            case ID_TOKEN:
+                return tokenData.toString();
+            case NUM_TOKEN:
+                return tokenData.toString();
+            case END_OF_FILE:
+                return "EOF";
+            case ERROR:
+                return "error";
+        }
+        return "";
+    }
+
     public Object getTokenData(){
         return tokenData;
     }

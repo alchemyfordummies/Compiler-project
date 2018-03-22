@@ -14,22 +14,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         String currentDir = Paths.get(".").toAbsolutePath().normalize().toString();
-        File cminusFile = new File(currentDir + "\\ParseTest.cm");
+        File cminusFile = new File(currentDir + "\\ParseTest2.cm");
         CMinusScanner scanner = new CMinusScanner(cminusFile);
         scanner.scan();
         scanner.printAllTokens();
         TokenList tokens = new TokenList(scanner.getTokensFound());
         try{
-            List<Declaration> declarations = DeclarationList.parseDeclarationList(tokens);
-            String toPrint = "DeclList:\n";
-            toPrint += "Declarations{\n";
-            for(Declaration decl : declarations){
-                toPrint += decl.print("  ");
-                if(declarations.indexOf(decl) != declarations.size() - 1){
-                    toPrint += ",\n";
-                }
-            }
-            toPrint += "}\n";
+            DeclarationList program = DeclarationList.parseDeclarationList(tokens);
+            String toPrint = program.print("");
             System.out.print(toPrint);
             PrintWriter writer = new PrintWriter("out.txt", "UTF-8");
             writer.print(toPrint);

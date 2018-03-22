@@ -14,15 +14,12 @@ public class VarExpression extends Expression implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "VarExpression:\n";
-        toPrint += padding + "ID{" + id.getTokenData() + "}\n";
-        toPrint += padding + "Index{\n";
+        String toPrint = padding + id.printToken() + "\n";
         if (index != null) {
-            toPrint += index.print(padding + "  ");
-        } else {
-            toPrint += padding + "none\n";
+            toPrint += padding + "  [\n";
+            toPrint += index.print(padding + "    ");
+            toPrint += padding + "  ]\n";
         }
-        toPrint += padding + "}\n";
         return toPrint;
     }
 }

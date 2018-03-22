@@ -12,6 +12,6 @@ public class NumExpression extends Expression implements Printable {
 
     @Override
     public String print(String padding) {
-        return padding + "NumExpression: {" + num.getTokenData() + "}\n";
+        return padding + num.printToken() + "\n";
     }
 }

@@ -18,7 +18,7 @@ public class Program {
         scanner.printAllTokens();
         TokenList tokens = new TokenList(scanner.getTokensFound());
         try{
-            List<Declaration> declarations = DeclarationList.parseDeclarationList(tokens);
+           DeclarationList declarations = DeclarationList.parseDeclarationList(tokens);
         }
         catch(ParseException e){
             e.printStackTrace();

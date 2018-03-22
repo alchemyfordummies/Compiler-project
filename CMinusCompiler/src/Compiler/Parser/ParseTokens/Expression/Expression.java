@@ -50,7 +50,8 @@ public class Expression implements Printable {
         } else if (nextToken.match(OPEN_PARENS_TOKEN)) {
             List<Expression> args = parseArgs(tokens);
             if (tokens.getNextToken().match(CLOSE_PARENS_TOKEN)) {
-                return new CallExpression(idToken, args);
+                Expression callExpr = new CallExpression(idToken, args);
+                return parseSimpleExpressionPrime(tokens, callExpr);
             }
             throw new ParseException("Expected ) token", 0);
         } else {

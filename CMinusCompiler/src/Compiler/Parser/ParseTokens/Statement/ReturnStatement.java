@@ -40,13 +40,9 @@ public class ReturnStatement extends Statement implements Printable{
 
     @Override
     public String print(String padding){
-        String toPrint = padding + "ReturnStatement:\n";
-        toPrint += padding + "ReturnValue{\n";
+        String toPrint = padding + "return{\n";
         if(expression != null){
             toPrint += expression.print(padding + "  ");
-        }
-        else{
-            toPrint += padding + "none\n";
         }
         toPrint += padding + "}\n";
         return toPrint;

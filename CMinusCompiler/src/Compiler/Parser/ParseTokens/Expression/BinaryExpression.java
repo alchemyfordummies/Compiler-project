@@ -16,12 +16,9 @@ public class BinaryExpression extends Expression implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "BinaryExpression:\n";
-        toPrint += padding + "Operator{" + operator.getTokenType().toString() + "}\n";
-        toPrint += padding + "LHS{\n";
-        toPrint += lhs.print(padding + "  ") + padding + "}\n";
-        toPrint += padding + "RHS{\n";
-        toPrint += rhs.print(padding + "  ") + padding + "}\n";
+        String toPrint = padding + operator.printToken() + "\n";
+        toPrint += lhs.print(padding + "  ");
+        toPrint += rhs.print(padding + "  ");
         return toPrint;
     }
 }

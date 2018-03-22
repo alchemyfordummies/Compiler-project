@@ -16,20 +16,17 @@ public class CallExpression extends Expression implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "CallExpression:\n";
-        toPrint += padding + "Function{" + functionToCall.getTokenData() + "}\n";
-        toPrint += padding + "Args{\n";
+        String toPrint = padding + functionToCall.getTokenData() + "(";
         if (!argList.isEmpty()) {
+            toPrint += "\n";
             for (Expression e : argList) {
                 toPrint += e.print(padding + "  ");
                 if(argList.indexOf(e) != argList.size() - 1){
                     toPrint += padding + ",\n";
                 }
             }
-        } else {
-            toPrint += padding + "  none\n";
         }
-        toPrint += padding + "}\n";
+        toPrint += padding + ")\n";
         return toPrint;
     }
 }

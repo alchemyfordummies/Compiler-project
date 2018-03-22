@@ -48,21 +48,14 @@ public class IterationStatement extends Statement implements Printable {
 
     @Override
     public String print(String padding){
-        String toPrint = padding + "IterationStatement:\n";
-        toPrint += padding + "Conditional{\n";
+        String toPrint = padding + "while(\n";
         if(conditional != null){
             toPrint += conditional.print(padding + "  ");
         }
-        else{
-            toPrint += padding + "none\n";
-        }
-        toPrint += padding + "}\n";
-        toPrint += padding + "Statement{\n";
+        toPrint += padding + ")\n";
+        toPrint += padding + "{\n";
         if(statement != null){
             toPrint += statement.print(padding + "  ");
-        }
-        else{
-            toPrint += "none\n";
         }
         toPrint += padding + "}\n";
         return toPrint;

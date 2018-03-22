@@ -14,11 +14,9 @@ public class AssignmentExpression extends Expression implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "AssignmentExpression:\n";
-        toPrint += padding + "LHS{\n";
-        toPrint += lhs.print(padding + "  ") + padding + "}\n";
-        toPrint += padding + "RHS{\n";
-        toPrint += rhs.print(padding + "  ") + padding + "}\n";
+        String toPrint = padding + "=\n";
+        toPrint += lhs.print(padding + "  ");
+        toPrint += rhs.print(padding + "  ");
         return toPrint;
     }
 

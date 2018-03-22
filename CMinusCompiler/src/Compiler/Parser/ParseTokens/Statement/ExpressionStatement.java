@@ -37,15 +37,9 @@ public class ExpressionStatement extends Statement implements Printable {
 
     @Override
     public String print(String padding) {
-        String toPrint = padding + "ExpressionStatement:\n";
-        ;
-        toPrint += padding + "Expression{\n";
-        if (expression != null) {
+        String toPrint = "";
+        if (expression != null)
             toPrint += expression.print(padding + "  ");
-        } else {
-            toPrint += "none\n";
-        }
-        toPrint += padding + "}\n";
         return toPrint;
     }
 }
