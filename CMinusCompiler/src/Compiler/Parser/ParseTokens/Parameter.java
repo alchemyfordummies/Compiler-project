@@ -33,6 +33,7 @@ public class Parameter implements Printable {
                 nextToken = tokens.getNextToken();
 
                 if (nextToken.match(CLOSE_PARENS_TOKEN)) {
+                    tokens.ungetToken();
                     return parameters;
                 } else if (nextToken.match(COMMA_TOKEN)) {
                     nextToken = tokens.getNextToken();

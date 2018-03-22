@@ -22,9 +22,12 @@ public class DeclarationList implements Printable{
         }
 
         if (declarations.size() == 0) {
-            throw new ParseException("Found no declarations", 7);
+            throw new ParseException("Found no declarations", tokens.getIndex());
         } else {
-            return declarations;
+            if(nextToken.match(END_OF_FILE)){
+                return declarations;
+            }
+            throw new ParseException("Expected EOF", tokens.getIndex());
         }
     }
 

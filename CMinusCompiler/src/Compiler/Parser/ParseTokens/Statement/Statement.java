@@ -11,7 +11,8 @@ import static Compiler.Scanner.Token.TokenType.*;
 public class Statement implements Printable {
     public static Statement parseStatement(TokenList tokens) throws ParseException {
         Token nextToken = tokens.viewNextToken();
-        if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)) {
+        if (nextToken.match(ID_TOKEN) || nextToken.match(SEMICOLON_TOKEN)
+                || nextToken.match(NUM_TOKEN) || nextToken.match(OPEN_PARENS_TOKEN)) {
             return ExpressionStatement.parseExpressionStatement(tokens);
         } else if (nextToken.match(OPEN_CURLY_BRACE_TOKEN)) {
             return CompoundStatement.parseCompoundStatement(tokens);

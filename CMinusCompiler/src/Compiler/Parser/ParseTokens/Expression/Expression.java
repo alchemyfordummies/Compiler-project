@@ -66,7 +66,9 @@ public class Expression implements Printable {
             Expression rhs = parseExpression(tokens);
             return new AssignmentExpression(expression1, rhs);
         } else if (nextToken.match(MULTIPLY_TOKEN) || nextToken.match(DIVIDE_TOKEN) || nextToken.match(SEMICOLON_TOKEN)
-                || nextToken.match(CLOSE_BRACKET_TOKEN) || nextToken.match(CLOSE_PARENS_TOKEN) || nextToken.match(COMMA_TOKEN)) {
+                || nextToken.match(CLOSE_BRACKET_TOKEN) || nextToken.match(CLOSE_PARENS_TOKEN) || nextToken.match(COMMA_TOKEN)
+                || nextToken.match(MINUS_TOKEN) || nextToken.match(PLUS_TOKEN)) {
+            tokens.ungetToken();
             return parseSimpleExpressionPrime(tokens, expression1);
         } else {
             throw new ParseException("Expected first or follow of expression'", 0);

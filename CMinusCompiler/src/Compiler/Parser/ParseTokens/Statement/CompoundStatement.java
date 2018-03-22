@@ -47,6 +47,7 @@ public class CompoundStatement extends Statement implements Printable {
         } else if (nextToken.match(INT_TOKEN)) {
             while (nextToken.match(INT_TOKEN)) {
                 varDeclarations.add(parseVarDeclaration(tokenList));
+                nextToken = tokenList.viewNextToken();
             }
             return varDeclarations;
         } else {
@@ -79,25 +80,24 @@ public class CompoundStatement extends Statement implements Printable {
                 if (openBracketToken.match(OPEN_BRACKET_TOKEN)) {
                     Token numToken = tokens.getNextToken();
                     if (numToken.match(NUM_TOKEN)) {
-                        Token closeBracketToken = tokens.getNextToken();
-                        if (closeBracketToken.match(CLOSE_BRACKET_TOKEN)) {
-                            return new VarDeclaration(nextToken, idToken, numToken);
-                        } else {
-                            throw new ParseException("Expected close bracket in varDecl", 1);
+                        if (tokens.getNextToken().match(CLOSE_BRACKET_TOKEN)) {
+                            if (tokens.getNextToken().match(SEMICOLON_TOKEN)) {
+                                return new VarDeclaration(nextToken, idToken, numToken);
+                            }
+                            throw new ParseException("Expected ;", tokens.getIndex());
                         }
-                    } else {
-                        throw new ParseException("Expected num in varDecl index", 1);
+                        throw new ParseException("Expected close bracket in varDecl", tokens.getIndex());
                     }
-                } else {
-                    tokens.ungetToken();
+                    throw new ParseException("Expected num in varDecl index", tokens.getIndex());
+
+                } else if (openBracketToken.match(SEMICOLON_TOKEN)){
                     return new VarDeclaration(nextToken, idToken, null);
                 }
-            } else {
-                throw new ParseException("Expected id token in varDecl", 1);
+                throw new ParseException("Expected ;", tokens.getIndex());
             }
-        } else {
-            throw new ParseException("Expected int token in varDecl", 1);
+            throw new ParseException("Expected id token in varDecl", tokens.getIndex());
         }
+        throw new ParseException("Expected int token in varDecl", tokens.getIndex());
     }
 
     @Override

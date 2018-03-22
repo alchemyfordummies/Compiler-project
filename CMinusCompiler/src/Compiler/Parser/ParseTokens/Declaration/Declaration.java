@@ -29,10 +29,17 @@ public class Declaration implements Printable {
             return new VarDeclaration(typeIdentifier, id);
         } else if (currToken.match(OPEN_BRACKET_TOKEN)) {
             Token numToken = tokens.getNextToken();
-            if (!numToken.match(NUM_TOKEN)) {
-                throw new ParseException("Expected num", tokens.getIndex());
+            if (numToken.match(NUM_TOKEN)) {
+                if(tokens.getNextToken().match(CLOSE_BRACKET_TOKEN)){
+                    if(tokens.getNextToken().match(SEMICOLON_TOKEN)){
+                        return new VarDeclaration(typeIdentifier, id, numToken);
+                    }
+                    throw new ParseException("Expected ;", tokens.getIndex());
+                }
+                throw new ParseException("Expected ]", tokens.getIndex());
             }
-            return new VarDeclaration(typeIdentifier, id, numToken);
+            throw new ParseException("Expected num", tokens.getIndex());
+
         } else if (currToken.match(OPEN_PARENS_TOKEN)) {
             tokens.ungetToken();
             return FunctionDeclaration.parseFunctionDeclarationPrime(tokens, typeIdentifier, id);

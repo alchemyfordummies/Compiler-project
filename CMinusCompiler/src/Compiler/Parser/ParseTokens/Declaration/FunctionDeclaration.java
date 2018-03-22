@@ -28,18 +28,17 @@ public class FunctionDeclaration extends Declaration implements Printable {
     public static FunctionDeclaration parseFunctionDeclarationPrime(TokenList tokens, Token typeSpecifier, Token id) throws ParseException {
         List<Parameter> params;
         CompoundStatement compoundStatement;
-        if (tokens.getNextToken().match(OPEN_PARENS_TOKEN)) {
-            Token nextToken = tokens.viewNextToken();
-            if (nextToken.match(VOID_TOKEN)) {
-                return null;
-            } else if (nextToken.match(INT_TOKEN)) {
-                params = Parameter.parseParameterList(tokens);
+        Token nextToken = tokens.getNextToken();
+        if (nextToken.match(OPEN_PARENS_TOKEN)) {
+            params = Parameter.parseParameterList(tokens);
+            nextToken = tokens.getNextToken();
+            if(nextToken.match(CLOSE_PARENS_TOKEN)){
                 compoundStatement = CompoundStatement.parseCompoundStatement(tokens);
                 return new FunctionDeclaration(typeSpecifier, id, params, compoundStatement);
             }
-            throw new ParseException("PARSE ERROR", 4);
+            throw new ParseException("Expected )", tokens.getIndex());
         }
-        throw new ParseException("PARSE ERROR", 4);
+        throw new ParseException("Expected (", tokens.getIndex());
     }
 
     @Override

@@ -14,7 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         String currentDir = Paths.get(".").toAbsolutePath().normalize().toString();
-        File cminusFile = new File(currentDir + "\\cminustest.cm");
+        File cminusFile = new File(currentDir + "\\ParseTest.cm");
         CMinusScanner scanner = new CMinusScanner(cminusFile);
         scanner.scan();
         scanner.printAllTokens();
@@ -30,6 +30,7 @@ public class Main {
                 }
             }
             toPrint += "}\n";
+            System.out.print(toPrint);
             PrintWriter writer = new PrintWriter("out.txt", "UTF-8");
             writer.print(toPrint);
             writer.close();
