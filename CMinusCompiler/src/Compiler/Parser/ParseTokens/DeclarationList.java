@@ -4,6 +4,7 @@ import Compiler.Parser.ParseTokens.Declaration.Declaration;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.CodeItem;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -46,5 +47,14 @@ public class DeclarationList implements Printable{
         }
         toPrint += padding + "}\n";
         return toPrint;
+    }
+
+    public CodeItem genLLCode(){
+        CodeItem firstDecl = declarations.get(0).genLLCode();
+        CodeItem currentItem = firstDecl;
+        for(int i = 1; i < declarations.size(); i++){
+            currentItem.setNextItem(declarations.get(i).genLLCode());
+        }
+        return firstDecl;
     }
 }

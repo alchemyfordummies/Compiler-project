@@ -1,7 +1,9 @@
 package Compiler.Parser.ParseTokens.Expression;
 
 import Compiler.Parser.Printable;
+import Compiler.Parser.Program;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.Operand;
 
 public class VarExpression extends Expression implements Printable {
     Token id;
@@ -21,5 +23,10 @@ public class VarExpression extends Expression implements Printable {
             toPrint += padding + "  ]\n";
         }
         return toPrint;
+    }
+
+    @Override
+    public Operand genLLOperand() {
+        return new Operand(Operand.OperandType.REGISTER, Program.lookupSymbol((String)id.getTokenData()));
     }
 }

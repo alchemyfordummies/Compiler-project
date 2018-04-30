@@ -5,6 +5,9 @@ import Compiler.Parser.ParseTokens.Expression.Expression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.CodeItem;
+import ProjThreeCode.lowlevel.Function;
+import ProjThreeCode.lowlevel.Operation;
 
 import java.text.ParseException;
 
@@ -41,5 +44,10 @@ public class ExpressionStatement extends Statement implements Printable {
         if (expression != null)
             toPrint += expression.print(padding + "  ");
         return toPrint;
+    }
+
+    public void genLLCode(Function func){
+        expression.genLLCode(func);
+
     }
 }

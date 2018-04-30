@@ -5,6 +5,8 @@ import Compiler.Parser.ParseTokens.Expression.VarExpression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.CodeItem;
+import ProjThreeCode.lowlevel.Function;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -114,5 +116,8 @@ public class CompoundStatement extends Statement implements Printable {
             }
         }
         return toPrint;
+    }
+
+    public void genLLCode(Function function){
     }
 }

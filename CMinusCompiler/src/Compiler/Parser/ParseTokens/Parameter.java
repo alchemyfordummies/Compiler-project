@@ -3,6 +3,9 @@ package Compiler.Parser.ParseTokens;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.CodeItem;
+import ProjThreeCode.lowlevel.Data;
+import ProjThreeCode.lowlevel.FuncParam;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -79,5 +82,9 @@ public class Parameter implements Printable {
         if (isArray)
             toPrint += padding + "[]";
         return toPrint;
+    }
+
+    public FuncParam genLLCode(){
+        return new FuncParam(Data.TYPE_INT, (String) id.getTokenData());
     }
 }

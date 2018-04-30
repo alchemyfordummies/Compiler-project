@@ -3,6 +3,7 @@ package Compiler.Parser.ParseTokens.Expression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.*;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -209,5 +210,12 @@ public class Expression implements Printable {
     @Override
     public String print(String padding) {
         return "";
+    }
+
+    public void genLLCode(Function function){
+    }
+
+    public Operand genLLOperand(){
+        return null;
     }
 }

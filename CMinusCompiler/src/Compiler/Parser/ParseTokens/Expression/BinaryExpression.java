@@ -2,6 +2,8 @@ package Compiler.Parser.ParseTokens.Expression;
 
 import Compiler.Parser.Printable;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.Function;
+import ProjThreeCode.lowlevel.Operand;
 
 public class BinaryExpression extends Expression implements Printable {
     Expression lhs;
@@ -20,5 +22,10 @@ public class BinaryExpression extends Expression implements Printable {
         toPrint += lhs.print(padding + "  ");
         toPrint += rhs.print(padding + "  ");
         return toPrint;
+    }
+
+    @Override
+    public void genLLCode(Function function) {
+        super.genLLCode(function);
     }
 }

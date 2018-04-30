@@ -5,6 +5,10 @@ import Compiler.Parser.ParseTokens.Statement.CompoundStatement;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.CodeItem;
+import ProjThreeCode.lowlevel.Data;
+import ProjThreeCode.lowlevel.FuncParam;
+import ProjThreeCode.lowlevel.Function;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
@@ -54,5 +58,26 @@ public class FunctionDeclaration extends Declaration implements Printable {
         printValue += ")\n";
         printValue += padding + "{\n" + compoundStatement.print(padding + "  ") + padding + "}\n";
         return printValue;
+    }
+
+    @Override
+    public CodeItem genLLCode(){
+        Function func;
+        int type = typeSpecifier.match(Token.TokenType.INT_TOKEN) ? Data.TYPE_INT : Data.TYPE_VOID;
+        if(!params.isEmpty()){
+            FuncParam firstParam = params.get(0).genLLCode();
+            FuncParam currentParam = firstParam;
+            for(int i = 1; i < params.size(); i++){
+                FuncParam nextParam = params.get(i).genLLCode();
+                currentParam.setNextParam(nextParam);
+                currentParam = nextParam;
+            }
+            func = new Function(type, (String) id.getTokenData(), firstParam);
+        }
+        else{
+            func = new Function(type, (String) id.getTokenData());
+        }
+        compoundStatement.genLLCode(func);
+        return func;
     }
 }
