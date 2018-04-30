@@ -1,29 +1,42 @@
 package Compiler.Parser;
 
 import Compiler.Parser.ParseTokens.DeclarationList;
-import Compiler.Scanner.Token;
-import Tree.AbstractSyntaxTree;
-import Tree.TreeNode;
+import Compiler.Scanner.CMinusScanner;
 
-import java.util.ArrayList;
+import java.io.File;
+import java.io.PrintWriter;
 
 public class CMinusParser implements Parser {
-    private ArrayList<Token> tokens;
+    public Program program;
+    public TokenList tokens;
 
-    public CMinusParser(ArrayList<Token> tokens) {
-        this.tokens = tokens;
+    public CMinusParser(String filename){
+        File cminusFile = new File(filename);
+        CMinusScanner scanner = new CMinusScanner(cminusFile);
+        scanner.scan();
+        scanner.printAllTokens();
+        tokens = new TokenList(scanner.getTokensFound());
     }
 
     @Override
-    public AbstractSyntaxTree parse() {
-//        TreeNode treeNode = new TreeNode(1);
-//        Token token = tokens.get(0);
-//        treeNode = declarationList.parseToken(tokens, 0);
-//        if (token.getTokenType() != Token.TokenType.END_OF_FILE) {
-//            // print an error
-//        }
-//
-//        return new AbstractSyntaxTree(treeNode);
-        return null;
+    public Program parse(){
+        program = null;
+        try{
+            DeclarationList declList = DeclarationList.parseDeclarationList(tokens);
+            String toPrint = declList.print("");
+            PrintWriter writer = new PrintWriter("out.txt", "UTF-8");
+            writer.print(toPrint);
+            writer.close();
+            program = new Program(declList);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return program;
+    }
+
+    @Override
+    public void printAST(Program program){
+        System.out.print(program.declarationList.print(""));
     }
 }
