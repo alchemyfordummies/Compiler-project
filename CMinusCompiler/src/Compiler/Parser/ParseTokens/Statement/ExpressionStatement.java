@@ -9,6 +9,7 @@ import ProjThreeCode.lowlevel.CodeItem;
 import ProjThreeCode.lowlevel.Function;
 import ProjThreeCode.lowlevel.Operation;
 
+import java.io.IOException;
 import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
@@ -46,8 +47,8 @@ public class ExpressionStatement extends Statement implements Printable {
         return toPrint;
     }
 
-    public void genLLCode(Function func){
+    @Override
+    public void genLLCode(Function func) throws IOException{
         expression.genLLCode(func);
-
     }
 }

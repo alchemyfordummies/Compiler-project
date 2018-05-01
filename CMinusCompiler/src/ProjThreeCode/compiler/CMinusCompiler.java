@@ -5,6 +5,8 @@ import Compiler.Parser.Parser;
 import Compiler.Parser.Program;
 import ProjThreeCode.lowlevel.*;
 import ProjThreeCode.x64codegen.X64AssemblyGenerator;
+
+import java.nio.file.Paths;
 import java.util.*;
 import java.io.*;
 import ProjThreeCode.optimizer.*;
@@ -36,7 +38,13 @@ public class CMinusCompiler implements Compiler {
             Program parseTree = myParser.parse();
             myParser.printAST(parseTree);
 
-            CodeItem lowLevelCode = parseTree.genLLCode();
+            CodeItem lowLevelCode = null;
+            try{
+                lowLevelCode = parseTree.genLLCode();
+            }
+            catch (IOException e){
+                e.printStackTrace();
+            }
 
             fileName = filePrefix + ".ll";
             PrintWriter outFile =
@@ -126,7 +134,8 @@ public class CMinusCompiler implements Compiler {
     }
 
     public static void main(String[] args) {
-        String filePrefix = "test5";
+        String currentDir = Paths.get(".").toAbsolutePath().normalize().toString();
+        String filePrefix = currentDir + "\\testcode";
         CMinusCompiler myCompiler = new CMinusCompiler();
         myCompiler.setGenX64Code(true);
         myCompiler.compile(filePrefix);

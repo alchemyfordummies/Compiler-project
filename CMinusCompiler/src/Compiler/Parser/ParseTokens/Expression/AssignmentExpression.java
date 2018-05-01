@@ -30,10 +30,12 @@ public class AssignmentExpression extends Expression implements Printable {
 
     @Override
     public void genLLCode(Function function) throws IOException{
-        Operation oper = new Operation(OperationType.ASSIGN, function.getCurrBlock());
-        int lValue = lhs.genLLCodeAndRegister(function);
+        Operation oper;
         OperandType rhsType;
         int rValue;
+        Operand lhsOper;
+        Operand rhsOper;
+
         if(rhs.getClass().equals(NumExpression.class)) {
             rhsType = Operand.OperandType.INTEGER;
             rValue = ((NumExpression)rhs).getValue();
@@ -42,10 +44,22 @@ public class AssignmentExpression extends Expression implements Printable {
             rhsType = Operand.OperandType.REGISTER;
             rValue = rhs.genLLCodeAndRegister(function);
         }
-        Operand lhsOper = new Operand(OperandType.REGISTER, lValue);
-        Operand rhsOper = new Operand(rhsType, rValue);
-        oper.setSrcOperand(0, rhsOper);
-        oper.setDestOperand(0, lhsOper);
-        function.getCurrBlock().appendOper(oper);
+
+        if(lhs.getClass().equals(VarExpression.class) && Program.isGlobalSymbol(((VarExpression)lhs).getId())){
+            oper = new Operation(OperationType.STORE_I, function.getCurrBlock());
+            oper.setSrcOperand(0, new Operand(rhsType, rValue));
+            oper.setSrcOperand(1, new Operand(OperandType.STRING, ((VarExpression)lhs).getId()));
+            oper.setSrcOperand(2, new Operand(OperandType.INTEGER, 0));
+            function.getCurrBlock().appendOper(oper);
+        }
+        else{
+            int lValue = lhs.genLLCodeAndRegister(function);
+            rhsOper = new Operand(rhsType, rValue);
+            lhsOper = new Operand(OperandType.REGISTER, lValue);
+            oper = new Operation(OperationType.ASSIGN, function.getCurrBlock());
+            oper.setSrcOperand(0, rhsOper);
+            oper.setDestOperand(0, lhsOper);
+            function.getCurrBlock().appendOper(oper);
+        }
     }
 }

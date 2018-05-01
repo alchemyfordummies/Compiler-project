@@ -8,6 +8,7 @@ import Compiler.Scanner.Token;
 import ProjThreeCode.lowlevel.CodeItem;
 import ProjThreeCode.lowlevel.Function;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -118,9 +119,10 @@ public class CompoundStatement extends Statement implements Printable {
         return toPrint;
     }
 
-    public void genLLCode(Function function){
+    @Override
+    public void genLLCode(Function function) throws IOException{
         for(VarDeclaration localDecl : localDeclarations){
-            localDecl.addToSymbolTable();
+            localDecl.addToSymbolTable(function);
         }
         for(Statement stmt : statementList){
             stmt.genLLCode(function);

@@ -216,7 +216,7 @@ public class Expression implements Printable {
     public void genLLCode(Function function) throws IOException{
     }
 
-    public Operand genLLOperand(){
+    public Operand genLLOperand(Function function){
         return null;
     }
 

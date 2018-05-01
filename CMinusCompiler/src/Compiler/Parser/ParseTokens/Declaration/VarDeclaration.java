@@ -4,6 +4,7 @@ import Compiler.Parser.Printable;
 import Compiler.Parser.Program;
 import Compiler.Scanner.Token;
 import ProjThreeCode.lowlevel.Data;
+import ProjThreeCode.lowlevel.Function;
 import com.sun.prism.PixelFormat;
 
 public class VarDeclaration extends Declaration implements Printable {
@@ -31,11 +32,11 @@ public class VarDeclaration extends Declaration implements Printable {
     }
 
     public Data genDataLLCode(){
-        addToSymbolTable();
+        Program.addGlobalSymbol((String)id.getTokenData());
         return new Data(Data.TYPE_INT, (String)id.getTokenData());
     }
 
-    public void addToSymbolTable(){
-        Program.lookupSymbol((String)id.getTokenData());
+    public void addToSymbolTable(Function function){
+        Program.lookupSymbol((String)id.getTokenData(), function);
     }
 }

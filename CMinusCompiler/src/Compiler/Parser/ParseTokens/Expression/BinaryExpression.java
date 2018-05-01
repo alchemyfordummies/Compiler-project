@@ -69,8 +69,11 @@ public class BinaryExpression extends Expression implements Printable {
             case NOT_EQUALS_TOKEN:
                 type = OperationType.NOT_EQUAL;
                 break;
+            case EQUALS_TOKEN:
+                type = OperationType.EQUAL;
+                break;
             default:
-                throw new IOException("Invalid token in BinaryExpr");
+                throw new IOException("Invalid token in BinaryExpr: " + operator.getTokenType());
         }
         Operation oper = new Operation(type, function.getCurrBlock());
         OperandType lhsType;
@@ -95,7 +98,7 @@ public class BinaryExpression extends Expression implements Printable {
         }
         Operand lhsOper = new Operand(lhsType, lValue);
         Operand rhsOper = new Operand(rhsType, rValue);
-        int destRegNum = Program.getNextAvailableRegister();
+        int destRegNum = Program.getNextAvailableRegister(function);
         Operand destReg = new Operand(OperandType.REGISTER, destRegNum);
         oper.setSrcOperand(0, lhsOper);
         oper.setSrcOperand(1, rhsOper);

@@ -5,6 +5,7 @@ import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 import ProjThreeCode.lowlevel.Function;
 
+import java.io.IOException;
 import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
@@ -33,7 +34,7 @@ public class Statement implements Printable {
         return "";
     }
 
-    public void genLLCode(Function func){
+    public void genLLCode(Function func) throws IOException{
 
     }
 }

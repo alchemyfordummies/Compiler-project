@@ -1,12 +1,18 @@
 package Compiler.Parser.ParseTokens.Statement;
 
 import Compiler.Parser.ParseTokens.Expression.Expression;
+import Compiler.Parser.ParseTokens.Expression.NumExpression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 import ProjThreeCode.lowlevel.BasicBlock;
 import ProjThreeCode.lowlevel.Function;
+import ProjThreeCode.lowlevel.Operand;
+import ProjThreeCode.lowlevel.Operation;
+import ProjThreeCode.lowlevel.Operand.*;
+import ProjThreeCode.lowlevel.Operation.*;
 
+import java.io.IOException;
 import java.text.ParseException;
 
 import static Compiler.Scanner.Token.TokenType.*;
@@ -82,11 +88,43 @@ public class SelectionStatement extends Statement implements Printable{
         return toPrint;
     }
 
-    public void genLLCode(){
-        BasicBlock blocks[] = new BasicBlock[3];
-        blocks[0] = new BasicBlock(new Function())
-        if(doElse == null){
+    @Override
+    public void genLLCode(Function function) throws IOException{
+        BasicBlock thenBlock = new BasicBlock(function);
+        BasicBlock postBlock = new BasicBlock(function);
+        BasicBlock elseBlock = new BasicBlock(function);
 
+
+        int conditionalResultRegister = conditional.genLLCodeAndRegister(function);
+        Operation branchEq = new Operation(OperationType.BEQ, function.getCurrBlock());
+        branchEq.setSrcOperand(0, new Operand(OperandType.REGISTER, conditionalResultRegister));
+        branchEq.setSrcOperand(1, new Operand(OperandType.INTEGER, 0));
+        branchEq.setSrcOperand(2, new Operand(OperandType.BLOCK, elseBlock.getBlockNum()));
+        function.getCurrBlock().appendOper(branchEq);
+
+        function.appendToCurrentBlock(thenBlock);
+        function.setCurrBlock(thenBlock);
+        doIf.genLLCode(function);
+
+        Operation jumpToPostThen = new Operation(OperationType.JMP, thenBlock);
+        jumpToPostThen.setSrcOperand(0, new Operand(OperandType.BLOCK, postBlock.getBlockNum()));
+        thenBlock.appendOper(jumpToPostThen);
+
+        function.setCurrBlock(elseBlock);
+        if(doElse != null){
+            doElse.genLLCode(function);
         }
+        Operation jumpToPostElse = new Operation(OperationType.JMP, elseBlock);
+        jumpToPostElse.setSrcOperand(0, new Operand(OperandType.BLOCK, postBlock.getBlockNum()));
+        elseBlock.appendOper(jumpToPostElse);
+        if(function.getFirstUnconnectedBlock() == null){
+            function.setFirstUnconnectedBlock(elseBlock);
+        }
+        else {
+            function.appendUnconnectedBlock(elseBlock);
+        }
+
+        function.appendBlock(postBlock);
+        function.setCurrBlock(postBlock);
     }
 }

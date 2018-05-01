@@ -7,7 +7,9 @@ import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 import ProjThreeCode.lowlevel.CodeItem;
+import ProjThreeCode.lowlevel.Function;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +53,7 @@ public class DeclarationList implements Printable{
         return toPrint;
     }
 
-    public CodeItem genLLCode(){
+    public CodeItem genLLCode() throws IOException{
         Declaration firstDecl = declarations.get(0);
         CodeItem firstItem = getCodeItemForDeclaration(firstDecl);
         CodeItem currentItem = firstItem;
@@ -63,7 +65,7 @@ public class DeclarationList implements Printable{
         return firstItem;
     }
 
-    public CodeItem getCodeItemForDeclaration(Declaration declaration){
+    public CodeItem getCodeItemForDeclaration(Declaration declaration) throws IOException{
         CodeItem toReturn;
         if(declaration.getClass().equals(VarDeclaration.class)){
             toReturn = ((VarDeclaration)declaration).genDataLLCode();

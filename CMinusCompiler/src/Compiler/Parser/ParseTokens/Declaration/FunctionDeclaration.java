@@ -5,12 +5,14 @@ import Compiler.Parser.ParseTokens.Statement.CompoundStatement;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.BasicBlock;
 import ProjThreeCode.lowlevel.Data;
 import ProjThreeCode.lowlevel.FuncParam;
 import ProjThreeCode.lowlevel.Function;
 
 import static Compiler.Scanner.Token.TokenType.*;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.List;
 
@@ -58,7 +60,7 @@ public class FunctionDeclaration extends Declaration implements Printable {
         return printValue;
     }
 
-    public Function genFunctionLLCode(){
+    public Function genFunctionLLCode() throws IOException {
         Function func;
         int type = typeSpecifier.match(Token.TokenType.INT_TOKEN) ? Data.TYPE_INT : Data.TYPE_VOID;
         if(!params.isEmpty()){
@@ -75,8 +77,16 @@ public class FunctionDeclaration extends Declaration implements Printable {
             func = new Function(type, (String) id.getTokenData());
         }
         func.createBlock0();
+        func.setCurrBlock(func.getFirstBlock());
+        BasicBlock functionBlock = new BasicBlock(func);
+        func.appendToCurrentBlock(functionBlock);
+        func.setCurrBlock(functionBlock);
         compoundStatement.genLLCode(func);
-        func.genReturnBlock();
+        if(func.getFirstUnconnectedBlock() != null){
+            func.setCurrBlock(func.getLastBlock());
+            func.appendToCurrentBlock(func.getFirstUnconnectedBlock());
+            func.setCurrBlock(func.getLastBlock());
+        }
         return func;
     }
 }

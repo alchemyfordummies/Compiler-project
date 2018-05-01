@@ -10,14 +10,35 @@
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/Expression.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/Expression.java" />
-      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/NumExpression.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/NumExpression.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/VarExpression.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/VarExpression.java" />
-      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Parameter.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Parameter.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java" />
       <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java" />
+      <change beforePath="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java" afterPath="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java" />
+      <change beforePath="$PROJECT_DIR$/out.txt" afterPath="$PROJECT_DIR$/out.txt" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Declaration/Declaration.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Declaration/Declaration.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Declaration/VarDeclaration.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Declaration/VarDeclaration.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/DeclarationList.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/DeclarationList.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/BinaryExpression.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/BinaryExpression.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/CallExpression.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/CallExpression.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/Expression.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/Expression.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/NumExpression.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/NumExpression.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/VarExpression.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Expression/VarExpression.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Parameter.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Parameter.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/ParseToken.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/CompoundStatement.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/CompoundStatement.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/IterationStatement.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/IterationStatement.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/ReturnStatement.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/ReturnStatement.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/SelectionStatement.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/SelectionStatement.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/Statement.class" afterPath="$PROJECT_DIR$/out/production/CMinusCompiler/Compiler/Parser/ParseTokens/Statement/Statement.class" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,20 +48,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Compiler_project$Main.coverage" NAME="Main Coverage Results" MODIFIED="1521601971723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CMinusCompiler$Program.coverage" NAME="Program Coverage Results" MODIFIED="1519001281233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Compiler_project$Main.coverage" NAME="Main Coverage Results" MODIFIED="1521601971723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DockManager">
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file leaf-file-name="Token.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Scanner/Token.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="306">
-                    <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-                    <folding />
+                  <state relative-caret-position="611">
+                    <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#3314#3315#0" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -55,40 +78,38 @@
       <file leaf-file-name="SelectionStatement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="86" column="50" lean-forward="true" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
+            <state relative-caret-position="615">
+              <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompoundStatement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java">
+      <file leaf-file-name="IterationStatement.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="125" column="37" lean-forward="false" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+            <state relative-caret-position="508">
+              <caret line="85" column="88" lean-forward="true" selection-start-line="85" selection-start-column="88" selection-end-line="85" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryExpression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java">
+      <file leaf-file-name="DeclarationList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="334">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VarExpression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/VarExpression.java">
+      <file leaf-file-name="FunctionDeclaration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="580">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,59 +118,44 @@
       <file leaf-file-name="AssignmentExpression.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CallExpression.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="623">
+              <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumExpression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/NumExpression.java">
+      <file leaf-file-name="CMinusCompiler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Operation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state relative-caret-position="398">
+              <caret line="137" column="52" lean-forward="false" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Expression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/Expression.java">
+      <file leaf-file-name="BasicBlock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/BasicBlock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="215" column="63" lean-forward="false" selection-start-line="215" selection-start-column="63" selection-end-line="215" selection-end-column="63" />
+            <state relative-caret-position="200">
+              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
-                <element signature="e#9583#9584#0" expanded="true" />
-                <element signature="e#9608#9609#0" expanded="true" />
-                <element signature="e#9716#9717#0" expanded="true" />
-                <element signature="e#9743#9744#0" expanded="true" />
+                <element signature="e#4305#4306#0" expanded="true" />
+                <element signature="e#4333#4334#0" expanded="true" />
+                <element signature="e#4381#4382#0" expanded="true" />
+                <element signature="e#4408#4409#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JumpOptimizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/optimizer/JumpOptimizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-98">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,13 +163,22 @@
       <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="370">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpressionStatement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -198,6 +213,14 @@
       <find>parseexpressionpr</find>
       <find>vardecls</find>
       <find>createblock</find>
+      <find>PARAM_NUM</find>
+      <find>MOV</find>
+      <find>beq</find>
+      <find>getBlockNum</find>
+      <find>get</find>
+      <find>bne</find>
+      <find>x86</find>
+      <find>load</find>
     </findStrings>
     <replaceStrings>
       <replace>match</replace>
@@ -214,8 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMinusCompiler/ParseTest3.cm" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Main.java" />
         <option value="$PROJECT_DIR$/ParseTest3.cm" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/project_3_code/Proj#3 Code/src/compiler/CMinusCompiler.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/Compiler.java" />
@@ -242,29 +263,31 @@
         <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Function.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/BasicBlock.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Operand.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/LivenessAnalysis.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/DefUseAnalysis.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/ControlFlowAnalysis.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Parser.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/CMinusParser.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/Declaration.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/VarDeclaration.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Parameter.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/NumExpression.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/Expression.java" />
-        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/VarDeclaration.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/LivenessAnalysis.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/VarExpression.java" />
         <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/test5.c" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java" />
+        <option value="$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java" />
       </list>
     </option>
   </component>
@@ -291,9 +314,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -411,7 +433,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,13 +467,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.CMinusCompiler">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="CMinusCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ProjThreeCode.compiler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ProjThreeCode.compiler.CMinusCompiler" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CMinusCompiler" />
+      <envs />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -554,14 +596,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Program" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CMinusCompiler" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Program" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.CMinusCompiler" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Program" />
       </list>
     </recent_temporary>
   </component>
@@ -612,35 +656,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10392365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45705196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6235419" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3647932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37539765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -663,91 +706,42 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java</url>
-          <line>54</line>
+          <url>file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Function.java</url>
+          <line>477</line>
           <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Parameter.java</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java</url>
+          <line>86</line>
           <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java</url>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/CMinusParser.java</url>
-          <line>12</line>
-          <properties class="Compiler.Parser.CMinusParser" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="47" />
+      <option name="time" value="62" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="functionToCall" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>functionToCall</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x64codegen/X64CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x64codegen/X64CodegenException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x64codegen/X64AssemblyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x86codegen/X86RegisterAllocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x86codegen/X86CodegenException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x86codegen/X86CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x86codegen/X86AssemblyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x64codegen/X64RegisterAllocator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -759,14 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/LivenessAnalysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -809,36 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/CMinusParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/CodeItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -851,22 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Operand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="73" column="9" lean-forward="false" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -892,20 +832,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/testcode.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/ben.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/testcode.c" />
+    <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/ben.c" />
     <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/out.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -913,40 +841,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/test5.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/BasicBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="60" column="9" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/Declaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-          <folding>
-            <element signature="e#2408#2409#0" expanded="false" />
-            <element signature="e#2435#2436#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/CMinusCompiler/test5.c" />
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -960,139 +855,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/VarDeclaration.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/Declaration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="66" lean-forward="false" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="782">
+          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Operand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="73" column="9" lean-forward="false" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Scanner/CMinusScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="288" column="0" lean-forward="true" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/CMinusParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="86" column="21" lean-forward="false" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+        <state relative-caret-position="139">
+          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2884#2885#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Function.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Printable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="287" column="20" lean-forward="false" selection-start-line="287" selection-start-column="20" selection-end-line="287" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="76" column="28" lean-forward="false" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+        <state relative-caret-position="186">
+          <caret line="136" column="13" lean-forward="false" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/x64codegen/X64CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/BitArraySet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Scanner/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="347">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Operation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="172">
           <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="251">
+          <caret line="333" column="22" lean-forward="true" selection-start-line="333" selection-start-column="22" selection-end-line="333" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#3267#3268#0" expanded="true" />
+            <element signature="e#3306#3307#0" expanded="true" />
+            <element signature="e#5806#5807#0" expanded="true" />
+            <element signature="e#5834#5835#0" expanded="true" />
+            <element signature="e#6438#6439#0" expanded="true" />
+            <element signature="e#6466#6467#0" expanded="true" />
+            <element signature="e#7895#7896#0" expanded="true" />
+            <element signature="e#7923#7924#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/dataflow/LivenessAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="86" column="50" lean-forward="true" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="125" column="37" lean-forward="false" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+        <state relative-caret-position="198">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/VarDeclaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="222" column="15" lean-forward="false" selection-start-line="222" selection-start-column="15" selection-end-line="222" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/VarExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="100" column="66" lean-forward="false" selection-start-line="100" selection-start-column="66" selection-end-line="100" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/NumExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
@@ -1100,33 +1034,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/Expression.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/test5.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="215" column="63" lean-forward="false" selection-start-line="215" selection-start-column="63" selection-end-line="215" selection-end-column="63" />
+        <state relative-caret-position="448">
+          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ReturnStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="72" column="88" lean-forward="false" selection-start-line="72" selection-start-column="88" selection-end-line="72" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Scanner/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
-            <element signature="e#9583#9584#0" expanded="true" />
-            <element signature="e#9608#9609#0" expanded="true" />
-            <element signature="e#9716#9717#0" expanded="true" />
-            <element signature="e#9743#9744#0" expanded="true" />
+            <element signature="e#3314#3315#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/BinaryExpression.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/CompoundStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="665">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/DeclarationList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/CallExpression.java">
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/ExpressionStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="629">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Expression/AssignmentExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Declaration/FunctionDeclaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/compiler/CMinusCompiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="137" column="52" lean-forward="false" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/lowlevel/BasicBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding>
+            <element signature="e#4305#4306#0" expanded="true" />
+            <element signature="e#4333#4334#0" expanded="true" />
+            <element signature="e#4381#4382#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/ProjThreeCode/optimizer/JumpOptimizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/SelectionStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMinusCompiler/src/Compiler/Parser/ParseTokens/Statement/IterationStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="85" column="88" lean-forward="true" selection-start-line="85" selection-start-column="88" selection-end-line="85" selection-end-column="88" />
           <folding />
         </state>
       </provider>
