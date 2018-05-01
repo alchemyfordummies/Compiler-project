@@ -3,6 +3,7 @@ package Compiler.Parser.ParseTokens.Statement;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.Function;
 
 import java.text.ParseException;
 
@@ -30,5 +31,9 @@ public class Statement implements Printable {
     @Override
     public String print(String padding) {
         return "";
+    }
+
+    public void genLLCode(Function func){
+
     }
 }

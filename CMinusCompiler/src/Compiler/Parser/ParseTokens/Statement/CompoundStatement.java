@@ -119,5 +119,11 @@ public class CompoundStatement extends Statement implements Printable {
     }
 
     public void genLLCode(Function function){
+        for(VarDeclaration localDecl : localDeclarations){
+            localDecl.addToSymbolTable();
+        }
+        for(Statement stmt : statementList){
+            stmt.genLLCode(function);
+        }
     }
 }

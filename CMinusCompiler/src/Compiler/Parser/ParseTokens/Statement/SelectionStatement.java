@@ -4,6 +4,8 @@ import Compiler.Parser.ParseTokens.Expression.Expression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.BasicBlock;
+import ProjThreeCode.lowlevel.Function;
 
 import java.text.ParseException;
 
@@ -78,5 +80,13 @@ public class SelectionStatement extends Statement implements Printable{
         }
         toPrint += padding + "}\n";
         return toPrint;
+    }
+
+    public void genLLCode(){
+        BasicBlock blocks[] = new BasicBlock[3];
+        blocks[0] = new BasicBlock(new Function())
+        if(doElse == null){
+
+        }
     }
 }

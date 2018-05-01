@@ -3,7 +3,10 @@ package Compiler.Parser.ParseTokens.Expression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.Program;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.Function;
 import ProjThreeCode.lowlevel.Operand;
+
+import java.io.IOException;
 
 public class VarExpression extends Expression implements Printable {
     Token id;
@@ -28,5 +31,14 @@ public class VarExpression extends Expression implements Printable {
     @Override
     public Operand genLLOperand() {
         return new Operand(Operand.OperandType.REGISTER, Program.lookupSymbol((String)id.getTokenData()));
+    }
+
+    @Override
+    public void genLLCode(Function function) throws IOException{
+        genLLCodeAndRegister(function);
+    }
+
+    public int genLLCodeAndRegister(Function function) throws IOException {
+        return Program.lookupSymbol((String)id.getTokenData());
     }
 }

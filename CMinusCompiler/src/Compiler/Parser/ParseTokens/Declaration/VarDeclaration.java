@@ -1,7 +1,10 @@
 package Compiler.Parser.ParseTokens.Declaration;
 
 import Compiler.Parser.Printable;
+import Compiler.Parser.Program;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.Data;
+import com.sun.prism.PixelFormat;
 
 public class VarDeclaration extends Declaration implements Printable {
     Token typeSpecifier;
@@ -25,5 +28,14 @@ public class VarDeclaration extends Declaration implements Printable {
         String toPrint = padding + typeSpecifier.printToken() + " " + id.printToken()
                 + (arrayIndex == null ? "\n" : ("[" + arrayIndex.printToken()) + "]\n");
         return toPrint;
+    }
+
+    public Data genDataLLCode(){
+        addToSymbolTable();
+        return new Data(Data.TYPE_INT, (String)id.getTokenData());
+    }
+
+    public void addToSymbolTable(){
+        Program.lookupSymbol((String)id.getTokenData());
     }
 }

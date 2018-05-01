@@ -4,6 +4,7 @@ import Compiler.Parser.ParseTokens.Expression.Expression;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
+import ProjThreeCode.lowlevel.Function;
 
 import java.text.ParseException;
 
@@ -46,5 +47,9 @@ public class ReturnStatement extends Statement implements Printable{
         }
         toPrint += padding + "}\n";
         return toPrint;
+    }
+
+    public void genLLCode(Function function){
+
     }
 }

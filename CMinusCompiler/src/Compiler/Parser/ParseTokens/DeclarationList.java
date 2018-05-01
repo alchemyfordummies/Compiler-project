@@ -1,6 +1,8 @@
 package Compiler.Parser.ParseTokens;
 
 import Compiler.Parser.ParseTokens.Declaration.Declaration;
+import Compiler.Parser.ParseTokens.Declaration.FunctionDeclaration;
+import Compiler.Parser.ParseTokens.Declaration.VarDeclaration;
 import Compiler.Parser.Printable;
 import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
@@ -50,11 +52,25 @@ public class DeclarationList implements Printable{
     }
 
     public CodeItem genLLCode(){
-        CodeItem firstDecl = declarations.get(0).genLLCode();
-        CodeItem currentItem = firstDecl;
+        Declaration firstDecl = declarations.get(0);
+        CodeItem firstItem = getCodeItemForDeclaration(firstDecl);
+        CodeItem currentItem = firstItem;
         for(int i = 1; i < declarations.size(); i++){
-            currentItem.setNextItem(declarations.get(i).genLLCode());
+            CodeItem nextItem = getCodeItemForDeclaration(declarations.get(i));
+            currentItem.setNextItem(nextItem);
+            currentItem = nextItem;
         }
-        return firstDecl;
+        return firstItem;
+    }
+
+    public CodeItem getCodeItemForDeclaration(Declaration declaration){
+        CodeItem toReturn;
+        if(declaration.getClass().equals(VarDeclaration.class)){
+            toReturn = ((VarDeclaration)declaration).genDataLLCode();
+        }
+        else{
+            toReturn = ((FunctionDeclaration)declaration).genFunctionLLCode();
+        }
+        return toReturn;
     }
 }

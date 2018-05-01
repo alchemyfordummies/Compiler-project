@@ -5,6 +5,7 @@ import Compiler.Parser.TokenList;
 import Compiler.Scanner.Token;
 import ProjThreeCode.lowlevel.*;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -212,10 +213,14 @@ public class Expression implements Printable {
         return "";
     }
 
-    public void genLLCode(Function function){
+    public void genLLCode(Function function) throws IOException{
     }
 
     public Operand genLLOperand(){
         return null;
+    }
+
+    public int genLLCodeAndRegister(Function function) throws IOException{
+        return 0;
     }
 }

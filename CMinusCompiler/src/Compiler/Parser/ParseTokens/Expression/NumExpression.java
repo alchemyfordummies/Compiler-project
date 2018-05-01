@@ -14,4 +14,8 @@ public class NumExpression extends Expression implements Printable {
     public String print(String padding) {
         return padding + num.printToken() + "\n";
     }
+
+    public int getValue(){
+        return (int)num.getTokenData();
+    }
 }

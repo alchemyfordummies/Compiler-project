@@ -84,7 +84,7 @@ public class Parameter implements Printable {
         return toPrint;
     }
 
-    public FuncParam genLLCode(){
+    public FuncParam genLLFuncParam(){
         return new FuncParam(Data.TYPE_INT, (String) id.getTokenData());
     }
 }
