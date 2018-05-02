@@ -62,4 +62,48 @@ public class AssignmentExpression extends Expression implements Printable {
             function.getCurrBlock().appendOper(oper);
         }
     }
+
+    @Override
+    public int genLLCodeAndRegister(Function function) throws IOException{
+        Operation oper;
+        OperandType rhsType;
+        int rValue;
+        Operand lhsOper;
+        Operand rhsOper;
+
+        int regToReturn;
+        if(rhs.getClass().equals(NumExpression.class)) {
+            rhsType = Operand.OperandType.INTEGER;
+            rValue = ((NumExpression)rhs).getValue();
+        }
+        else{
+            rhsType = Operand.OperandType.REGISTER;
+            rValue = rhs.genLLCodeAndRegister(function);
+        }
+
+        if(lhs.getClass().equals(VarExpression.class) && Program.isGlobalSymbol(((VarExpression)lhs).getId())){
+            oper = new Operation(OperationType.STORE_I, function.getCurrBlock());
+            oper.setSrcOperand(0, new Operand(rhsType, rValue));
+            oper.setSrcOperand(1, new Operand(OperandType.STRING, ((VarExpression)lhs).getId()));
+            oper.setSrcOperand(2, new Operand(OperandType.INTEGER, 0));
+            function.getCurrBlock().appendOper(oper);
+            Operation load = new Operation(OperationType.LOAD_I, function.getCurrBlock());
+            regToReturn = Program.getNextAvailableRegister(function);
+            load.setSrcOperand(0, new Operand(OperandType.STRING, ((VarExpression)lhs).getId()));
+            load.setSrcOperand(1, new Operand(OperandType.INTEGER, 0));
+            load.setDestOperand(0, new Operand(OperandType.REGISTER, regToReturn));
+            function.getCurrBlock().appendOper(load);
+        }
+        else{
+            int lValue = lhs.genLLCodeAndRegister(function);
+            rhsOper = new Operand(rhsType, rValue);
+            lhsOper = new Operand(OperandType.REGISTER, lValue);
+            oper = new Operation(OperationType.ASSIGN, function.getCurrBlock());
+            oper.setSrcOperand(0, rhsOper);
+            oper.setDestOperand(0, lhsOper);
+            function.getCurrBlock().appendOper(oper);
+            regToReturn = lValue;
+        }
+        return regToReturn;
+    }
 }
