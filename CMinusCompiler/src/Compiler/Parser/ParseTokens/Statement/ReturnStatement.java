@@ -73,7 +73,9 @@ public class ReturnStatement extends Statement implements Printable{
             returnOp.setSrcOperand(0, new Operand(isNum ? Operand.OperandType.INTEGER : Operand.OperandType.REGISTER,  val));
             function.getCurrBlock().appendOper(returnOp);
         }
-        BasicBlock returnBlock = function.genReturnBlock();
-        function.appendToCurrentBlock(returnBlock);
+
+        Operation jumpOp = new Operation(OperationType.JMP, function.getCurrBlock());
+        jumpOp.setSrcOperand(0, new Operand(Operand.OperandType.BLOCK, function.getReturnBlock().getBlockNum()));
+        function.getCurrBlock().appendOper(jumpOp);
     }
 }

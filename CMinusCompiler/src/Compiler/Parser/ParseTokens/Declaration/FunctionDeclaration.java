@@ -77,15 +77,14 @@ public class FunctionDeclaration extends Declaration implements Printable {
             func = new Function(type, (String) id.getTokenData());
         }
         func.createBlock0();
-        func.setCurrBlock(func.getFirstBlock());
+       // func.setCurrBlock(func.getFirstBlock());
         BasicBlock functionBlock = new BasicBlock(func);
-        func.appendToCurrentBlock(functionBlock);
+        func.appendBlock(functionBlock);
         func.setCurrBlock(functionBlock);
         compoundStatement.genLLCode(func);
+        func.appendBlock(func.getReturnBlock());
         if(func.getFirstUnconnectedBlock() != null){
-            func.setCurrBlock(func.getLastBlock());
-            func.appendToCurrentBlock(func.getFirstUnconnectedBlock());
-            func.setCurrBlock(func.getLastBlock());
+            func.appendBlock(func.getFirstUnconnectedBlock());
         }
         return func;
     }
